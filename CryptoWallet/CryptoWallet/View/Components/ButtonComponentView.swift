@@ -15,6 +15,6 @@ struct ButtonComponentView: View {
             
         } label:{
             Text(text).bold().padding(.all).foregroundColor(.white)
-        }.background(.linearGradient(Gradient(colors: [Color(red: 74/255, green: 125/255, blue: 223/255), Color(red: 74/255, green: 214/255, blue: 223/255)]), startPoint: .top, endPoint: .bottom)).cornerRadius(25).padding(.all)
+        }.frame(minWidth: 200).background(.linearGradient(Gradient(colors: [Color(red: 74/255, green: 125/255, blue: 223/255), Color(red: 74/255, green: 214/255, blue: 223/255)]), startPoint: .top, endPoint: .bottom)).cornerRadius(25).padding(.all)
     }
 }
