@@ -12,6 +12,7 @@
 		C31CD1192A669A0800975D39 /* PassFieldComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1182A669A0800975D39 /* PassFieldComponentView.swift */; };
 		C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
 		C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
+		C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
 		C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */; };
 		C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */; };
 		C3CAA4F92A657BCF00C1D3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CAA4F82A657BCF00C1D3B7 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		C31CD1182A669A0800975D39 /* PassFieldComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassFieldComponentView.swift; sourceTree = "<group>"; };
 		C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTextComponentView.swift; sourceTree = "<group>"; };
 		C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextComponentView.swift; sourceTree = "<group>"; };
+		C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		C3CAA4F12A657BCE00C1D3B7 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				C31CD1132A6690C600975D39 /* Components */,
 				C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */,
+				C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				C31CD1152A6692C100975D39 /* ButtonComponentView.swift in Sources */,
 				C31CD1172A6698C000975D39 /* TextFieldComponentView.swift in Sources */,
 				C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */,
+				C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */,
 				C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

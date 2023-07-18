@@ -10,10 +10,13 @@ import SwiftUI
 struct LoginView: View {
     var body: some View {
         ZStack {
-            Color(red: 74/255, green: 125/255, blue: 223/255).edgesIgnoringSafeArea(.top)
+            let gradient = Gradient(colors: [Color(red: 74/255, green: 125/255, blue: 223/255), Color(red: 74/255, green: 214/255, blue: 223/255)])
+            LinearGradient(gradient: gradient, startPoint: .top, endPoint: .center).edgesIgnoringSafeArea(.top)
             
             VStack {
+                Spacer()
                 TitleTextComponentView(title: "Welcome Back!")
+                Spacer()
                 Image("login")
                 VStack {
                     VStack {
@@ -26,9 +29,9 @@ struct LoginView: View {
                     HStack {
                         Text("Don't have an account?")
                         LinkTextComponentView(text: "Sign Up")
-                    }.padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
+                    }.padding(EdgeInsets(top: 0, leading: 0, bottom: 50, trailing: 0))
                     
-                }.background().cornerRadius(25, corners: [.topLeft, .topRight]).frame(maxHeight:500)
+                }.background().cornerRadius(25, corners: [.topLeft, .topRight]).frame(minHeight:500)
             }
             
         }
