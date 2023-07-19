@@ -18,7 +18,7 @@ struct CreateAccountView: View {
                 Image("office")
 
                 VStack {
-                    self.stackView()
+                    stackView()
                     Spacer()
 
                     ButtonComponentView(text: "Create Account")

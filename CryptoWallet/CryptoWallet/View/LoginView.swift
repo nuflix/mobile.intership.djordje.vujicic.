@@ -17,7 +17,7 @@ struct LoginView: View {
                 TitleTextComponentView(title: "Welcome Back!")
                 Image("login")
                 VStack {
-                    self.stackView()
+                    stackView()
 
                     Spacer()
 
