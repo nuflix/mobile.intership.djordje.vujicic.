@@ -15,6 +15,7 @@
 		C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
 		C35236462A67D359009C9951 /* GradientExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236452A67D359009C9951 /* GradientExtView.swift */; };
 		C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */; };
+		C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236492A67ECAA009C9951 /* ColorExtView.swift */; };
 		C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */; };
 		C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */; };
 		C3CAA4F92A657BCF00C1D3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CAA4F82A657BCF00C1D3B7 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		C35236452A67D359009C9951 /* GradientExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtView.swift; sourceTree = "<group>"; };
 		C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersExtView.swift; sourceTree = "<group>"; };
+		C35236492A67ECAA009C9951 /* ColorExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtView.swift; sourceTree = "<group>"; };
 		C3CAA4F12A657BCE00C1D3B7 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				C35236452A67D359009C9951 /* GradientExtView.swift */,
 				C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */,
+				C35236492A67ECAA009C9951 /* ColorExtView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */,
 				C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */,
 				C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */,
+				C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */,
 				C35236462A67D359009C9951 /* GradientExtView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

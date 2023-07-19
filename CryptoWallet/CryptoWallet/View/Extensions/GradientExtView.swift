@@ -6,15 +6,12 @@
 //
 
 import SwiftUI
-extension Gradient{
-    
-    public static var greenGrad: Gradient{
-        Gradient(colors: [Color("blueGrad"), Color("greenGrad")])
+extension Gradient {
+    public static var greenGrad: Gradient {
+        Gradient(colors: [.blueGrad, .greenGrad])
     }
-    
-    public static var blueGrad: Gradient{
-        Gradient(colors: [Color("blueGrad2Prim"), Color("greenGrad2Sec")])
-    }
-    
-}
 
+    public static var blueGrad: Gradient {
+        Gradient(colors: [.blueGrad2Prim, .blueGrad2Sec])
+    }
+}

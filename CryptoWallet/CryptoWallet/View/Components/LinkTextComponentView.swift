@@ -12,6 +12,6 @@ struct LinkTextComponentView: View {
     var body: some View {
         Text(text)
             .bold()
-            .foregroundColor(Color("greenGrad"))
+            .foregroundColor(.greenGrad)
     }
 }

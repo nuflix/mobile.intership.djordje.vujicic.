@@ -9,11 +9,10 @@ import SwiftUI
 
 struct ButtonComponentView: View {
     let text: String
-    
+
     var body: some View {
-        Button{
-            
-        } label:{
+        Button {
+        } label: {
             Text(text)
                 .bold()
                 .padding()
@@ -24,5 +23,3 @@ struct ButtonComponentView: View {
             .padding()
     }
 }
-
-

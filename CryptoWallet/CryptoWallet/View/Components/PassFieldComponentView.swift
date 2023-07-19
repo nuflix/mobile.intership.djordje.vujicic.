@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PassFieldComponentView: View {
-    @State private var pass: String = "";
-    let placeholder: String;
+    @State private var pass: String = ""
+    let placeholder: String
     var body: some View {
         SecureField(placeholder, text: $pass)
             .overlay(
@@ -18,4 +18,3 @@ struct PassFieldComponentView: View {
             )
     }
 }
-
