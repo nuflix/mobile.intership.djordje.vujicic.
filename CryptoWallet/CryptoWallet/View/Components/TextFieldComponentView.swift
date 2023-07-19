@@ -11,9 +11,11 @@ struct TextFieldComponentView: View {
     let placeholder: String;
     @State private var text: String = ""
     var body: some View {
-        TextField(placeholder, text: $text).overlay(
-        Divider().offset(x: 0, y: 20)
-        )
+        TextField(placeholder, text: $text)
+            .overlay(
+                Divider()
+                    .offset(x: 0, y: 20)
+            )
     }
 }
 
