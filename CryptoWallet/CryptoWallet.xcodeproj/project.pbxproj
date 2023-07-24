@@ -13,9 +13,22 @@
 		C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
 		C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
 		C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
+		C34C8EAE2A69152300582EAE /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EAD2A69152300582EAE /* Networker.swift */; };
+		C34C8EB62A692BFC00582EAE /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB52A692BFC00582EAE /* UserRepository.swift */; };
+		C34C8EBA2A693C6F00582EAE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB92A693C6F00582EAE /* PostModel.swift */; };
+		C34C8EBC2A69575900582EAE /* UserPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EBB2A69575900582EAE /* UserPostModel.swift */; };
+		C34C8EBE2A69579200582EAE /* JwtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EBD2A69579200582EAE /* JwtModel.swift */; };
+		C34C8EC02A695C8000582EAE /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EBF2A695C8000582EAE /* EmptyModel.swift */; };
+		C34C8EC22A69681500582EAE /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EC12A69681500582EAE /* UserLoginModel.swift */; };
+		C34C8EC42A697C6900582EAE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EC32A697C6900582EAE /* LoginViewModel.swift */; };
 		C35236462A67D359009C9951 /* GradientExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236452A67D359009C9951 /* GradientExtView.swift */; };
 		C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */; };
 		C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236492A67ECAA009C9951 /* ColorExtView.swift */; };
+		C3C9EF752A6A8AFE00B0CE4D /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */; };
+		C3C9EF772A6A8B6800B0CE4D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */; };
+		C3C9EF792A6AA56800B0CE4D /* UserRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */; };
+		C3C9EF7B2A6ABE2200B0CE4D /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */; };
+		C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemModel.swift */; };
 		C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */; };
 		C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */; };
 		C3CAA4F92A657BCF00C1D3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CAA4F82A657BCF00C1D3B7 /* Assets.xcassets */; };
@@ -23,6 +36,8 @@
 		C3CAA5062A657BCF00C1D3B7 /* CryptoWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA5052A657BCF00C1D3B7 /* CryptoWalletTests.swift */; };
 		C3CAA5102A657BCF00C1D3B7 /* CryptoWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA50F2A657BCF00C1D3B7 /* CryptoWalletUITests.swift */; };
 		C3CAA5122A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA5112A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift */; };
+		C3E861482A6818E90076591B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3E861472A6818E90076591B /* Alamofire */; };
+		C3E8614A2A68191F0076591B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E861492A68191F0076591B /* CreateAccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +64,22 @@
 		C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTextComponentView.swift; sourceTree = "<group>"; };
 		C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextComponentView.swift; sourceTree = "<group>"; };
 		C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		C34C8EAD2A69152300582EAE /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		C34C8EB52A692BFC00582EAE /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C34C8EB92A693C6F00582EAE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		C34C8EBB2A69575900582EAE /* UserPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostModel.swift; sourceTree = "<group>"; };
+		C34C8EBD2A69579200582EAE /* JwtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtModel.swift; sourceTree = "<group>"; };
+		C34C8EBF2A695C8000582EAE /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
+		C34C8EC12A69681500582EAE /* UserLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
+		C34C8EC32A697C6900582EAE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C35236452A67D359009C9951 /* GradientExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtView.swift; sourceTree = "<group>"; };
 		C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersExtView.swift; sourceTree = "<group>"; };
 		C35236492A67ECAA009C9951 /* ColorExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtView.swift; sourceTree = "<group>"; };
+		C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
+		C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryInterface.swift; sourceTree = "<group>"; };
+		C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListView.swift; sourceTree = "<group>"; };
+		C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListItemModel.swift; sourceTree = "<group>"; };
 		C3CAA4F12A657BCE00C1D3B7 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -62,6 +90,7 @@
 		C3CAA50B2A657BCF00C1D3B7 /* CryptoWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CAA50F2A657BCF00C1D3B7 /* CryptoWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletUITests.swift; sourceTree = "<group>"; };
 		C3CAA5112A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3E861492A68191F0076591B /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E861482A6818E90076591B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +126,7 @@
 				C31CD1132A6690C600975D39 /* Components */,
 				C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */,
 				C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */,
+				C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +141,28 @@
 				C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C34C8EAF2A691CB300582EAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C34C8EB92A693C6F00582EAE /* PostModel.swift */,
+				C34C8EBB2A69575900582EAE /* UserPostModel.swift */,
+				C34C8EBD2A69579200582EAE /* JwtModel.swift */,
+				C34C8EBF2A695C8000582EAE /* EmptyModel.swift */,
+				C34C8EC12A69681500582EAE /* UserLoginModel.swift */,
+				C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */,
+				C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C34C8EB22A691D6100582EAE /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		C35236442A67D33C009C9951 /* Extensions */ = {
@@ -145,7 +198,9 @@
 		C3CAA4F32A657BCE00C1D3B7 /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				C3E861422A6813C70076591B /* ModelView */,
 				C31CD1122A668ECF00975D39 /* View */,
+				C3E861412A6813BD0076591B /* Model */,
 				C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */,
 				C3CAA4F82A657BCF00C1D3B7 /* Assets.xcassets */,
 				C3CAA4FA2A657BCF00C1D3B7 /* Preview Content */,
@@ -178,6 +233,27 @@
 			path = CryptoWalletUITests;
 			sourceTree = "<group>";
 		};
+		C3E861412A6813BD0076591B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C34C8EB22A691D6100582EAE /* Interfaces */,
+				C34C8EAF2A691CB300582EAE /* Models */,
+				C34C8EAD2A69152300582EAE /* Networker.swift */,
+				C34C8EB52A692BFC00582EAE /* UserRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3E861422A6813C70076591B /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */,
+				C3E861492A68191F0076591B /* CreateAccountViewModel.swift */,
+				C34C8EC32A697C6900582EAE /* LoginViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +270,9 @@
 			dependencies = (
 			);
 			name = CryptoWallet;
+			packageProductDependencies = (
+				C3E861472A6818E90076591B /* Alamofire */,
+			);
 			productName = CryptoWallet;
 			productReference = C3CAA4F12A657BCE00C1D3B7 /* CryptoWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +345,9 @@
 				Base,
 			);
 			mainGroup = C3CAA4E82A657BCE00C1D3B7;
+			packageReferences = (
+				C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C3CAA4F22A657BCE00C1D3B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,17 +390,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34C8EBC2A69575900582EAE /* UserPostModel.swift in Sources */,
+				C3C9EF792A6AA56800B0CE4D /* UserRepositoryInterface.swift in Sources */,
 				C31CD1192A669A0800975D39 /* PassFieldComponentView.swift in Sources */,
+				C34C8EC42A697C6900582EAE /* LoginViewModel.swift in Sources */,
+				C34C8EBA2A693C6F00582EAE /* PostModel.swift in Sources */,
 				C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */,
 				C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */,
 				C31CD1152A6692C100975D39 /* ButtonComponentView.swift in Sources */,
+				C34C8EBE2A69579200582EAE /* JwtModel.swift in Sources */,
+				C3C9EF772A6A8B6800B0CE4D /* UserModel.swift in Sources */,
 				C31CD1172A6698C000975D39 /* TextFieldComponentView.swift in Sources */,
+				C34C8EAE2A69152300582EAE /* Networker.swift in Sources */,
 				C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */,
+				C3C9EF752A6A8AFE00B0CE4D /* UserDefaultsController.swift in Sources */,
 				C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */,
 				C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */,
+				C34C8EC22A69681500582EAE /* UserLoginModel.swift in Sources */,
+				C34C8EC02A695C8000582EAE /* EmptyModel.swift in Sources */,
+				C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemModel.swift in Sources */,
+				C3E8614A2A68191F0076591B /* CreateAccountViewModel.swift in Sources */,
 				C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */,
 				C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */,
 				C35236462A67D359009C9951 /* GradientExtView.swift in Sources */,
+				C34C8EB62A692BFC00582EAE /* UserRepository.swift in Sources */,
+				C3C9EF7B2A6ABE2200B0CE4D /* CryptoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +733,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3E861472A6818E90076591B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3CAA4E92A657BCE00C1D3B7 /* Project object */;
 }

@@ -8,29 +8,38 @@
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var viewModel: LoginViewModel
+    
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .center)
-                .edgesIgnoringSafeArea(.top)
-
-            VStack {
-                TitleTextComponentView(title: "Welcome Back!")
-                Image("login")
+        NavigationStack{
+            ZStack {
+                LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .center)
+                    .edgesIgnoringSafeArea(.top)
+                
                 VStack {
-                    stackView()
-
-                    Spacer()
-
-                    ButtonComponentView(text: "Login")
-                    HStack {
-                        Text("Don't have an account?")
-                        LinkTextComponentView(text: "Sign Up")
+                    TitleTextComponentView(title: "Welcome Back!")
+                    Image("login")
+                    VStack {
+                        stackView()
+                        
+                        Spacer()
+                        
+                        ButtonComponentView(text: "Login")
+                            .onTapGesture {
+                                viewModel.login()
+                            }
+                        HStack {
+                            Text("Don't have an account?")
+                            NavigationLink(destination: CreateAccountView(viewModel: CreateAccountViewModel(repository: UserRepository()))){
+                                LinkTextComponentView(text: "Sign Up")
+                            }
+                        }
+                        .padding(.bottom, 50)
                     }
-                    .padding(.bottom, 50)
+                    .background()
+                    .cornerRadius(25, corners: [.topLeft, .topRight])
+                    .frame(minHeight: 500)
                 }
-                .background()
-                .cornerRadius(25, corners: [.topLeft, .topRight])
-                .frame(minHeight: 500)
             }
         }
     }
@@ -38,16 +47,16 @@ struct LoginView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(viewModel: LoginViewModel(repository: UserRepository()))
     }
 }
 
 private extension LoginView {
     func stackView() -> some View {
         return VStack {
-            TextFieldComponentView(placeholder: "Email Address")
+            TextFieldComponentView(placeholder: "Email Address", text: $viewModel.email)
                 .padding()
-            PassFieldComponentView(placeholder: "Password")
+            PassFieldComponentView(placeholder: "Password", pass: $viewModel.pass)
                 .padding()
         }
         .padding(EdgeInsets(top: 30, leading: 5, bottom: 0, trailing: 5))
