@@ -18,14 +18,27 @@ class Networker {
     }()
     
     private let session: Session
+    private let baseUrl = "http://localhost:8080/api/v1"
        
     private init(configuration: URLSessionConfiguration) {
         self.session = Session(configuration: configuration)
     }
     
-    func fetch<T, U>(url: String, response: T, request: U) -> AnyPublisher<T, AFError>
-    where T: Decodable, U:Encodable
+    func fetch<T, U>(url: String, request: U, method: HTTPMethod) -> AnyPublisher<T, AFError>
+    where T: Decodable, U: Encodable
     {
-        return session.request(url, method: .post, parameters: request.self, encoder: JSONParameterEncoder.default).validate().publishDecodable(type: T.self).value().eraseToAnyPublisher()
+        let headers: HTTPHeaders = [
+            .authorization(bearerToken: UserDefaultsController.getJwt()!)
+            ]
+        return session.request(baseUrl+url, method: method, parameters: request.self, encoder: JSONParameterEncoder.default, headers: headers).validate().publishDecodable(type: T.self).value().eraseToAnyPublisher()
+    }
+    
+    func fetchWithoutReq<T>(url: String, method: HTTPMethod) -> AnyPublisher<T, AFError>
+    where T: Decodable
+    {
+        let headers: HTTPHeaders = [
+            .authorization(bearerToken: UserDefaultsController.getJwt()!)
+            ]
+        return session.request(baseUrl+url, method: method, headers: headers).validate().publishDecodable(type: T.self).value().eraseToAnyPublisher()
     }
 }

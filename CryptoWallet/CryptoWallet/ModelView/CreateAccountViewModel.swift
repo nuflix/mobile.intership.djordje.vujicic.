@@ -12,16 +12,27 @@ class CreateAccountViewModel: ObservableObject {
     @Published var pass: String = ""
     @Published var fName: String = ""
     @Published var lName: String = ""
+    @Published var isVisible = false
     
     private let repository: UserRepositoryInterface
     var tokens: Set<AnyCancellable> = []
     
     init(repository: UserRepositoryInterface) {
         self.repository = repository
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: Notification) {
+        isVisible = true
+    }
+        
+    @objc func keyboardWillHide(notification: Notification) {
+        isVisible = false
     }
     
     func createAccount() {
-        repository.createAccount(url: "http://localhost:8080/api/v1/users/register", request: UserPostModel(email: email, firstName: fName, lastName: lName, password: pass)).sink { error in
+        repository.createAccount(request: UserPostModel(email: email, firstName: fName, lastName: lName, password: pass)).sink { error in
             print("error: \(error)")
         } receiveValue: { result in
             

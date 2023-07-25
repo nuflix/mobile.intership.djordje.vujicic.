@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct EmptyModel: Decodable {
+struct EmptyModel: Codable {
     
 }

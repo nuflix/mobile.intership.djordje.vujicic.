@@ -11,20 +11,20 @@ import Combine
 
 class UserRepository: UserRepositoryInterface {
     
-    func createAccount (url: String, request: UserPostModel) -> AnyPublisher<EmptyModel, AFError> {
+    func createAccount (request: UserPostModel) -> AnyPublisher<EmptyModel, AFError> {
         
         
-        return Networker.shared.fetch(url: url, response: EmptyModel(), request: request.self).map { responseData in
+        return Networker.shared.fetch(url: "/users/register", request: request.self, method: .post).map { (responseData: EmptyModel) in
             return responseData as EmptyModel
         }.eraseToAnyPublisher()
         
     }
     
-    func login (url: String, request: UserLoginModel) -> AnyPublisher<JwtModel, AFError> {
+    func login (request: UserLoginModel) -> AnyPublisher<JwtModel, AFError> {
         
         
-        return Networker.shared.fetch(url: url, response: JwtModel(jwtToken: ""), request: request.self).map { responseData in
-            return responseData as JwtModel
+        return Networker.shared.fetch(url: "/users/login", request: request.self, method: .post).map { (responseData: JwtModel) in
+            return responseData
         }.eraseToAnyPublisher()
         
     }

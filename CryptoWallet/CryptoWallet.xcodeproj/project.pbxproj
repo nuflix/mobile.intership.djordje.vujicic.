@@ -13,6 +13,8 @@
 		C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
 		C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
 		C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
+		C3460AF82A6FC87D000CAB0A /* Base64Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460AF72A6FC87D000CAB0A /* Base64Image.swift */; };
+		C3460AFD2A6FF947000CAB0A /* CryptoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */; };
 		C34C8EAE2A69152300582EAE /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EAD2A69152300582EAE /* Networker.swift */; };
 		C34C8EB62A692BFC00582EAE /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB52A692BFC00582EAE /* UserRepository.swift */; };
 		C34C8EBA2A693C6F00582EAE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB92A693C6F00582EAE /* PostModel.swift */; };
@@ -24,11 +26,15 @@
 		C35236462A67D359009C9951 /* GradientExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236452A67D359009C9951 /* GradientExtView.swift */; };
 		C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */; };
 		C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236492A67ECAA009C9951 /* ColorExtView.swift */; };
+		C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437642A6E7D8000482FAE /* TradingView.swift */; };
+		C3A437672A6E8DD200482FAE /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */; };
+		C3A437692A6E902400482FAE /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437682A6E902400482FAE /* CryptoRepository.swift */; };
+		C3A4376B2A6E907600482FAE /* CryptoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A4376A2A6E907600482FAE /* CryptoRepositoryInterface.swift */; };
 		C3C9EF752A6A8AFE00B0CE4D /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */; };
 		C3C9EF772A6A8B6800B0CE4D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */; };
 		C3C9EF792A6AA56800B0CE4D /* UserRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */; };
 		C3C9EF7B2A6ABE2200B0CE4D /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */; };
-		C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemModel.swift */; };
+		C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemResponse.swift */; };
 		C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */; };
 		C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */; };
 		C3CAA4F92A657BCF00C1D3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CAA4F82A657BCF00C1D3B7 /* Assets.xcassets */; };
@@ -64,6 +70,8 @@
 		C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTextComponentView.swift; sourceTree = "<group>"; };
 		C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextComponentView.swift; sourceTree = "<group>"; };
 		C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		C3460AF72A6FC87D000CAB0A /* Base64Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64Image.swift; sourceTree = "<group>"; };
+		C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListItem.swift; sourceTree = "<group>"; };
 		C34C8EAD2A69152300582EAE /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		C34C8EB52A692BFC00582EAE /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		C34C8EB92A693C6F00582EAE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -75,11 +83,15 @@
 		C35236452A67D359009C9951 /* GradientExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtView.swift; sourceTree = "<group>"; };
 		C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersExtView.swift; sourceTree = "<group>"; };
 		C35236492A67ECAA009C9951 /* ColorExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtView.swift; sourceTree = "<group>"; };
+		C3A437642A6E7D8000482FAE /* TradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingView.swift; sourceTree = "<group>"; };
+		C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
+		C3A437682A6E902400482FAE /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
+		C3A4376A2A6E907600482FAE /* CryptoRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryInterface.swift; sourceTree = "<group>"; };
 		C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
 		C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryInterface.swift; sourceTree = "<group>"; };
 		C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListView.swift; sourceTree = "<group>"; };
-		C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListItemModel.swift; sourceTree = "<group>"; };
+		C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListItemResponse.swift; sourceTree = "<group>"; };
 		C3CAA4F12A657BCE00C1D3B7 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CAA4F42A657BCE00C1D3B7 /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -126,6 +138,7 @@
 				C31CD1132A6690C600975D39 /* Components */,
 				C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */,
 				C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */,
+				C3A437642A6E7D8000482FAE /* TradingView.swift */,
 				C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */,
 			);
 			path = View;
@@ -143,6 +156,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		C3460AFB2A6FF8F2000CAB0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C34C8EAF2A691CB300582EAE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +173,7 @@
 				C34C8EBF2A695C8000582EAE /* EmptyModel.swift */,
 				C34C8EC12A69681500582EAE /* UserLoginModel.swift */,
 				C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */,
-				C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemModel.swift */,
+				C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */,
+				C3A4376A2A6E907600482FAE /* CryptoRepositoryInterface.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -171,6 +193,7 @@
 				C35236452A67D359009C9951 /* GradientExtView.swift */,
 				C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */,
 				C35236492A67ECAA009C9951 /* ColorExtView.swift */,
+				C3460AF72A6FC87D000CAB0A /* Base64Image.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +262,7 @@
 				C34C8EB22A691D6100582EAE /* Interfaces */,
 				C34C8EAF2A691CB300582EAE /* Models */,
 				C34C8EAD2A69152300582EAE /* Networker.swift */,
+				C3A437682A6E902400482FAE /* CryptoRepository.swift */,
 				C34C8EB52A692BFC00582EAE /* UserRepository.swift */,
 			);
 			path = Model;
@@ -247,9 +271,11 @@
 		C3E861422A6813C70076591B /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				C3460AFB2A6FF8F2000CAB0A /* Models */,
 				C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */,
 				C3E861492A68191F0076591B /* CreateAccountViewModel.swift */,
 				C34C8EC32A697C6900582EAE /* LoginViewModel.swift */,
+				C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -394,22 +420,28 @@
 				C3C9EF792A6AA56800B0CE4D /* UserRepositoryInterface.swift in Sources */,
 				C31CD1192A669A0800975D39 /* PassFieldComponentView.swift in Sources */,
 				C34C8EC42A697C6900582EAE /* LoginViewModel.swift in Sources */,
+				C3A437672A6E8DD200482FAE /* CryptoListViewModel.swift in Sources */,
 				C34C8EBA2A693C6F00582EAE /* PostModel.swift in Sources */,
 				C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */,
 				C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */,
 				C31CD1152A6692C100975D39 /* ButtonComponentView.swift in Sources */,
 				C34C8EBE2A69579200582EAE /* JwtModel.swift in Sources */,
+				C3A4376B2A6E907600482FAE /* CryptoRepositoryInterface.swift in Sources */,
 				C3C9EF772A6A8B6800B0CE4D /* UserModel.swift in Sources */,
+				C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */,
 				C31CD1172A6698C000975D39 /* TextFieldComponentView.swift in Sources */,
 				C34C8EAE2A69152300582EAE /* Networker.swift in Sources */,
 				C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */,
+				C3460AFD2A6FF947000CAB0A /* CryptoListItem.swift in Sources */,
+				C3460AF82A6FC87D000CAB0A /* Base64Image.swift in Sources */,
 				C3C9EF752A6A8AFE00B0CE4D /* UserDefaultsController.swift in Sources */,
 				C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */,
 				C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */,
 				C34C8EC22A69681500582EAE /* UserLoginModel.swift in Sources */,
 				C34C8EC02A695C8000582EAE /* EmptyModel.swift in Sources */,
-				C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemModel.swift in Sources */,
+				C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemResponse.swift in Sources */,
 				C3E8614A2A68191F0076591B /* CreateAccountViewModel.swift in Sources */,
+				C3A437692A6E902400482FAE /* CryptoRepository.swift in Sources */,
 				C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */,
 				C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */,
 				C35236462A67D359009C9951 /* GradientExtView.swift in Sources */,

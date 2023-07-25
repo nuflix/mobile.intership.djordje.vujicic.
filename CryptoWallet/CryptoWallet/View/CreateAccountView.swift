@@ -19,7 +19,7 @@ struct CreateAccountView: View {
                 
                 VStack {
                     TitleTextComponentView(title: "Create Account")
-                    Image("office")
+                    showImage()
                     
                     VStack {
                         stackView()
@@ -40,11 +40,18 @@ struct CreateAccountView: View {
                     }
                     .background()
                     .cornerRadius(25, corners: [.topLeft, .topRight])
-                    .frame(minHeight: 550)
+                    .frame(minHeight: 500)
                 }
             }
         }
     }
+    
+    @ViewBuilder func showImage() -> some View {
+        if !viewModel.isVisible {
+            Image("office")
+        }
+    }
+    
 }
 
 struct CreateAccountView_Previews: PreviewProvider {

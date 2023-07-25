@@ -10,7 +10,7 @@ import Combine
 import Alamofire
 
 protocol UserRepositoryInterface {
-    func createAccount (url: String, request: UserPostModel) -> AnyPublisher<EmptyModel, AFError>
+    func createAccount (request: UserPostModel) -> AnyPublisher<EmptyModel, AFError>
     
-    func login (url: String, request: UserLoginModel) -> AnyPublisher<JwtModel, AFError>
+    func login (request: UserLoginModel) -> AnyPublisher<JwtModel, AFError>
 }

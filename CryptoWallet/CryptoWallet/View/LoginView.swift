@@ -18,12 +18,14 @@ struct LoginView: View {
                 
                 VStack {
                     TitleTextComponentView(title: "Welcome Back!")
-                    Image("login")
+                    showImg()
                     VStack {
                         stackView()
                         
                         Spacer()
-                        
+                        NavigationLink(destination: CryptoListView(viewModel: CryptoListViewModel(repository: CryptoRepository()))) {
+                            Text("Crypto List")
+                        }
                         ButtonComponentView(text: "Login")
                             .onTapGesture {
                                 viewModel.login()
@@ -43,6 +45,8 @@ struct LoginView: View {
             }
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -60,5 +64,13 @@ private extension LoginView {
                 .padding()
         }
         .padding(EdgeInsets(top: 30, leading: 5, bottom: 0, trailing: 5))
+    }
+    
+    
+    @ViewBuilder func showImg() -> some View {
+        if !viewModel.isVisible {
+            Image("login")
+        }
+        
     }
 }

@@ -8,34 +8,61 @@
 import SwiftUI
 
 struct CryptoListView: View {
-    var items: [CryptoListItemModel] = [CryptoListItemModel(id: 0, name: "ime", val: 10945.00), CryptoListItemModel(id: 1, name: "aaa", val: 1236.12), CryptoListItemModel(id: 2, name: "bb", val: 94.53)]
+    @StateObject var viewModel: CryptoListViewModel
+    
+    
     var body: some View {
-
         NavigationView {
             VStack{
-                Text("Add to your wallet").frame(maxWidth: .infinity, alignment: .leading).padding(.leading)
-                List {
-                    ForEach(items) { item in
-                        NavigationLink(destination: LoginView(viewModel: LoginViewModel(repository: UserRepository()))) {
-                            HStack {
-                                Text("img")
-                                VStack {
-                                    Text(item.name)
-                                    Text("\(item.val)$")
-                                }
-                            }
-                        }
-                    }
-                }
-                .listStyle(.plain)
+                Text("Add to your wallet")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading)
+                    .padding(.top, 30)
+                    .foregroundColor(.gray)
+                listView()
             }
+            .navigationBarTitle("Crypto List")
+            .navigationBarTitleDisplayMode(.inline)
+            .accentColor(.white)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .bottom), for: .navigationBar)
+            
+        }
+        .onAppear() {
+            viewModel.getCrypto()
         }
         
     }
+    
+    
+    func listView() -> some View {
+        return List {
+            ForEach(viewModel.items) { item in
+                NavigationLink(destination: TradingView()) {
+                    HStack {
+                        Image(base64String: item.icon)?
+                            .resizable()
+                            .frame(width: 40, height:  40)
+                        VStack(alignment: .leading) {
+                            Text("\(item.name) (\(item.abbreviation.uppercased()))")
+                                .fontWeight(.bold)
+                            Text("\(item.valueOfOne)$")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                        .padding(.leading)
+                    }
+                }
+            }
+        }
+        .listStyle(.plain)
+    }
+    
 }
+
 
 struct CryptoListView_Previews: PreviewProvider {
     static var previews: some View {
-        CryptoListView()
+        CryptoListView(viewModel: CryptoListViewModel(repository: CryptoRepository()))
     }
 }
