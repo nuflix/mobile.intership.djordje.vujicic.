@@ -13,6 +13,5 @@ struct CryptoListItem: Identifiable {
     let icon: String
     let valueOfOne: Double
     let abbreviation: String
-    let id_coin = UUID()
 }
 
