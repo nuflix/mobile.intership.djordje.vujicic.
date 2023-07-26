@@ -17,9 +17,11 @@ struct ButtonComponentView: View {
                 .bold()
                 .padding()
                 .foregroundColor(.white)
-        }.frame(minWidth: 200)
+        }
+            .frame(minWidth: 200)
             .background(.linearGradient(.greenGrad, startPoint: .top, endPoint: .bottom))
             .cornerRadius(25)
+            .shadow(color: .gray, radius: 3, x: 0, y: 5)
             .padding()
     }
 }

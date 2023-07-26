@@ -63,11 +63,11 @@ struct CreateAccountView_Previews: PreviewProvider {
 private extension CreateAccountView {
     func stackView() -> some View {
         return VStack {
-            TextFieldComponentView(placeholder: "First Name", text: $viewModel.fName)
+            TextFieldComponentView(placeholder: "First Name", text: $viewModel.fName, disabled: false)
                 .padding()
-            TextFieldComponentView(placeholder: "Last Name", text: $viewModel.lName)
+            TextFieldComponentView(placeholder: "Last Name", text: $viewModel.lName, disabled: false)
                 .padding()
-            TextFieldComponentView(placeholder: "Email Address", text:$viewModel.email)
+            TextFieldComponentView(placeholder: "Email Address", text:$viewModel.email, disabled: false)
                 .padding()
             PassFieldComponentView(placeholder: "Password", pass: $viewModel.pass)
                 .padding()

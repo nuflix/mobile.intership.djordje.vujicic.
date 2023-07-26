@@ -26,11 +26,8 @@ class CryptoListViewModel: ObservableObject {
         repository.getCrypto().sink { error in
             print("error: \(error)")
         } receiveValue: { [weak self] result in
-            if let safeSelf = self {
-                
-                safeSelf.items = result
-                
-            }
+                self?.items = result
+
         }.store(in: &tokens)
     }
 }

@@ -26,6 +26,11 @@
 		C35236462A67D359009C9951 /* GradientExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236452A67D359009C9951 /* GradientExtView.swift */; };
 		C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */; };
 		C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236492A67ECAA009C9951 /* ColorExtView.swift */; };
+		C3671ACB2A70FC8B004F360D /* TradingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACA2A70FC8B004F360D /* TradingViewModel.swift */; };
+		C3671ACD2A70FCE8004F360D /* TradingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACC2A70FCE8004F360D /* TradingModel.swift */; };
+		C3671ACF2A70FE0C004F360D /* TradingModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */; };
+		C3671AD12A70FE38004F360D /* TradingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD02A70FE38004F360D /* TradingRepository.swift */; };
+		C3671AD32A711EC7004F360D /* BuySellBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD22A711EC7004F360D /* BuySellBtnView.swift */; };
 		C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437642A6E7D8000482FAE /* TradingView.swift */; };
 		C3A437672A6E8DD200482FAE /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */; };
 		C3A437692A6E902400482FAE /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437682A6E902400482FAE /* CryptoRepository.swift */; };
@@ -83,6 +88,11 @@
 		C35236452A67D359009C9951 /* GradientExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtView.swift; sourceTree = "<group>"; };
 		C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersExtView.swift; sourceTree = "<group>"; };
 		C35236492A67ECAA009C9951 /* ColorExtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtView.swift; sourceTree = "<group>"; };
+		C3671ACA2A70FC8B004F360D /* TradingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingViewModel.swift; sourceTree = "<group>"; };
+		C3671ACC2A70FCE8004F360D /* TradingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingModel.swift; sourceTree = "<group>"; };
+		C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingModelResponse.swift; sourceTree = "<group>"; };
+		C3671AD02A70FE38004F360D /* TradingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingRepository.swift; sourceTree = "<group>"; };
+		C3671AD22A711EC7004F360D /* BuySellBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellBtnView.swift; sourceTree = "<group>"; };
 		C3A437642A6E7D8000482FAE /* TradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingView.swift; sourceTree = "<group>"; };
 		C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
 		C3A437682A6E902400482FAE /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
@@ -152,6 +162,7 @@
 				C31CD1182A669A0800975D39 /* PassFieldComponentView.swift */,
 				C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */,
 				C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */,
+				C3671AD22A711EC7004F360D /* BuySellBtnView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */,
+				C3671ACC2A70FCE8004F360D /* TradingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 				C34C8EC12A69681500582EAE /* UserLoginModel.swift */,
 				C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */,
 				C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemResponse.swift */,
+				C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,6 +277,7 @@
 				C34C8EAD2A69152300582EAE /* Networker.swift */,
 				C3A437682A6E902400482FAE /* CryptoRepository.swift */,
 				C34C8EB52A692BFC00582EAE /* UserRepository.swift */,
+				C3671AD02A70FE38004F360D /* TradingRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +290,7 @@
 				C3E861492A68191F0076591B /* CreateAccountViewModel.swift */,
 				C34C8EC32A697C6900582EAE /* LoginViewModel.swift */,
 				C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */,
+				C3671ACA2A70FC8B004F360D /* TradingViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -418,16 +433,19 @@
 			files = (
 				C34C8EBC2A69575900582EAE /* UserPostModel.swift in Sources */,
 				C3C9EF792A6AA56800B0CE4D /* UserRepositoryInterface.swift in Sources */,
+				C3671ACF2A70FE0C004F360D /* TradingModelResponse.swift in Sources */,
 				C31CD1192A669A0800975D39 /* PassFieldComponentView.swift in Sources */,
 				C34C8EC42A697C6900582EAE /* LoginViewModel.swift in Sources */,
 				C3A437672A6E8DD200482FAE /* CryptoListViewModel.swift in Sources */,
 				C34C8EBA2A693C6F00582EAE /* PostModel.swift in Sources */,
+				C3671ACB2A70FC8B004F360D /* TradingViewModel.swift in Sources */,
 				C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */,
 				C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */,
 				C31CD1152A6692C100975D39 /* ButtonComponentView.swift in Sources */,
 				C34C8EBE2A69579200582EAE /* JwtModel.swift in Sources */,
 				C3A4376B2A6E907600482FAE /* CryptoRepositoryInterface.swift in Sources */,
 				C3C9EF772A6A8B6800B0CE4D /* UserModel.swift in Sources */,
+				C3671AD32A711EC7004F360D /* BuySellBtnView.swift in Sources */,
 				C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */,
 				C31CD1172A6698C000975D39 /* TextFieldComponentView.swift in Sources */,
 				C34C8EAE2A69152300582EAE /* Networker.swift in Sources */,
@@ -442,10 +460,12 @@
 				C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemResponse.swift in Sources */,
 				C3E8614A2A68191F0076591B /* CreateAccountViewModel.swift in Sources */,
 				C3A437692A6E902400482FAE /* CryptoRepository.swift in Sources */,
+				C3671AD12A70FE38004F360D /* TradingRepository.swift in Sources */,
 				C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */,
 				C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */,
 				C35236462A67D359009C9951 /* GradientExtView.swift in Sources */,
 				C34C8EB62A692BFC00582EAE /* UserRepository.swift in Sources */,
+				C3671ACD2A70FCE8004F360D /* TradingModel.swift in Sources */,
 				C3C9EF7B2A6ABE2200B0CE4D /* CryptoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -58,7 +58,7 @@ struct ContentView_Previews: PreviewProvider {
 private extension LoginView {
     func stackView() -> some View {
         return VStack {
-            TextFieldComponentView(placeholder: "Email Address", text: $viewModel.email)
+            TextFieldComponentView(placeholder: "Email Address", text: $viewModel.email, disabled: false)
                 .padding()
             PassFieldComponentView(placeholder: "Password", pass: $viewModel.pass)
                 .padding()
