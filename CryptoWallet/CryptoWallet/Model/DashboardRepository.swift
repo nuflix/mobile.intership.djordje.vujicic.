@@ -18,8 +18,8 @@ class DashboardRepository: DashboardRepositoryInterface {
         return Networker.shared.fetchWithoutReq(url: "/users/wallet", method: .get).map { (response: WalletResponse) in
             response.toDomain()
         }
-        .handleEvents(receiveOutput: { result in
-            self.saveData(obj: result)
+        .handleEvents(receiveOutput: { [weak self] result in
+            self?.saveData(obj: result)
         })
         .mapError({ afErr in
             afErr as Error
