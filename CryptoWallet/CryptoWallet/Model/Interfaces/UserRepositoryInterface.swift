@@ -13,4 +13,6 @@ protocol UserRepositoryInterface {
     func createAccount (request: UserPostModel) -> AnyPublisher<EmptyModel, AFError>
     
     func login (request: UserLoginModel) -> AnyPublisher<JwtModel, AFError>
+    
+    func checkIfLogged() -> AnyPublisher<CurrentUser, AFError>
 }

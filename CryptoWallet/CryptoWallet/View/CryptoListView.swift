@@ -38,7 +38,7 @@ struct CryptoListView: View {
     func listView() -> some View {
         return List {
             ForEach(viewModel.items) { item in
-                NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: TradingRepository(), id: item.id))) {
+                NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: TradingRepository(), id: item.id, curVal: viewModel.findCrypto(id: item.id)?.sum ?? 0))) {
                     HStack {
                         Image(base64String: item.icon)?
                             .resizable()

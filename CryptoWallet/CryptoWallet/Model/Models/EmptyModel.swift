@@ -6,7 +6,13 @@
 //
 
 import Foundation
+import Alamofire
 
-struct EmptyModel: Codable {
+struct EmptyModel: EmptyResponse, Codable {
+    static func emptyValue() -> EmptyModel {
+        return EmptyModel()
+    }
+    
     
 }
+

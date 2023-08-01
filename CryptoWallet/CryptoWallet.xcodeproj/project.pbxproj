@@ -13,8 +13,20 @@
 		C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
 		C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
 		C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
+		C33A0C4F2A724A6500BEBA38 /* TradingRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C4E2A724A6500BEBA38 /* TradingRepositoryInterface.swift */; };
+		C33A0C512A724A8100BEBA38 /* DashboardRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C502A724A8100BEBA38 /* DashboardRepositoryInterface.swift */; };
+		C33A0C532A726EB800BEBA38 /* SuccessSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C522A726EB800BEBA38 /* SuccessSell.swift */; };
+		C33A0C592A72964200BEBA38 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C582A72964200BEBA38 /* DatabaseService.swift */; };
+		C33A0C5C2A72978900BEBA38 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C33A0C5B2A72978900BEBA38 /* Realm */; };
+		C33A0C5E2A72978900BEBA38 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C33A0C5D2A72978900BEBA38 /* RealmSwift */; };
+		C33A0C602A729BC600BEBA38 /* CryptocurrencyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C5F2A729BC600BEBA38 /* CryptocurrencyStorage.swift */; };
 		C3460AF82A6FC87D000CAB0A /* Base64Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460AF72A6FC87D000CAB0A /* Base64Image.swift */; };
 		C3460AFD2A6FF947000CAB0A /* CryptoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */; };
+		C34B61092A73B00600FFC1B8 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B61082A73B00600FFC1B8 /* SplashScreenView.swift */; };
+		C34B610B2A73B83900FFC1B8 /* CurrentUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B610A2A73B83900FFC1B8 /* CurrentUserResponse.swift */; };
+		C34B610D2A73B8DF00FFC1B8 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B610C2A73B8DF00FFC1B8 /* CurrentUser.swift */; };
+		C34B610F2A73BA3F00FFC1B8 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B610E2A73BA3F00FFC1B8 /* SplashScreenViewModel.swift */; };
+		C34B61112A74008F00FFC1B8 /* StrIdInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B61102A74008F00FFC1B8 /* StrIdInterface.swift */; };
 		C34C8EAE2A69152300582EAE /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EAD2A69152300582EAE /* Networker.swift */; };
 		C34C8EB62A692BFC00582EAE /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB52A692BFC00582EAE /* UserRepository.swift */; };
 		C34C8EBA2A693C6F00582EAE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB92A693C6F00582EAE /* PostModel.swift */; };
@@ -31,6 +43,15 @@
 		C3671ACF2A70FE0C004F360D /* TradingModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */; };
 		C3671AD12A70FE38004F360D /* TradingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD02A70FE38004F360D /* TradingRepository.swift */; };
 		C3671AD32A711EC7004F360D /* BuySellBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD22A711EC7004F360D /* BuySellBtnView.swift */; };
+		C3671AD52A715148004F360D /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD42A715148004F360D /* LoggedInView.swift */; };
+		C3671AD72A715352004F360D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD62A715352004F360D /* DashboardView.swift */; };
+		C3671AD92A716255004F360D /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD82A716255004F360D /* UserView.swift */; };
+		C3671ADB2A716266004F360D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADA2A716266004F360D /* SettingsView.swift */; };
+		C3671ADD2A7168E4004F360D /* DashboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADC2A7168E4004F360D /* DashboardRepository.swift */; };
+		C3671ADF2A716A6A004F360D /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADE2A716A6A004F360D /* WalletModel.swift */; };
+		C3671AE12A716B13004F360D /* CryptoWalletItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE02A716B13004F360D /* CryptoWalletItem.swift */; };
+		C3671AE32A716B62004F360D /* CryptoWalletResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */; };
+		C3671AE52A716F5C004F360D /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE42A716F5C004F360D /* DashboardViewModel.swift */; };
 		C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437642A6E7D8000482FAE /* TradingView.swift */; };
 		C3A437672A6E8DD200482FAE /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */; };
 		C3A437692A6E902400482FAE /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437682A6E902400482FAE /* CryptoRepository.swift */; };
@@ -47,6 +68,15 @@
 		C3CAA5062A657BCF00C1D3B7 /* CryptoWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA5052A657BCF00C1D3B7 /* CryptoWalletTests.swift */; };
 		C3CAA5102A657BCF00C1D3B7 /* CryptoWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA50F2A657BCF00C1D3B7 /* CryptoWalletUITests.swift */; };
 		C3CAA5122A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA5112A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift */; };
+		C3DFF49A2A77A1E0006CB15B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF4992A77A1DF006CB15B /* Roboto-Thin.ttf */; };
+		C3DFF49B2A77A1E0006CB15B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF4992A77A1DF006CB15B /* Roboto-Thin.ttf */; };
+		C3DFF49C2A77A1E0006CB15B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF4992A77A1DF006CB15B /* Roboto-Thin.ttf */; };
+		C3DFF49E2A77A22E006CB15B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF49D2A77A22E006CB15B /* Roboto-Light.ttf */; };
+		C3DFF49F2A77A22E006CB15B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF49D2A77A22E006CB15B /* Roboto-Light.ttf */; };
+		C3DFF4A02A77A22E006CB15B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF49D2A77A22E006CB15B /* Roboto-Light.ttf */; };
+		C3DFF4A32A77F428006CB15B /* TabViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFF4A22A77F428006CB15B /* TabViewImage.swift */; };
+		C3DFF4A42A77F428006CB15B /* TabViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFF4A22A77F428006CB15B /* TabViewImage.swift */; };
+		C3DFF4A52A77F428006CB15B /* TabViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFF4A22A77F428006CB15B /* TabViewImage.swift */; };
 		C3E861482A6818E90076591B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3E861472A6818E90076591B /* Alamofire */; };
 		C3E8614A2A68191F0076591B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E861492A68191F0076591B /* CreateAccountViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -75,8 +105,18 @@
 		C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTextComponentView.swift; sourceTree = "<group>"; };
 		C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextComponentView.swift; sourceTree = "<group>"; };
 		C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		C33A0C4E2A724A6500BEBA38 /* TradingRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingRepositoryInterface.swift; sourceTree = "<group>"; };
+		C33A0C502A724A8100BEBA38 /* DashboardRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRepositoryInterface.swift; sourceTree = "<group>"; };
+		C33A0C522A726EB800BEBA38 /* SuccessSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessSell.swift; sourceTree = "<group>"; };
+		C33A0C582A72964200BEBA38 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		C33A0C5F2A729BC600BEBA38 /* CryptocurrencyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocurrencyStorage.swift; sourceTree = "<group>"; };
 		C3460AF72A6FC87D000CAB0A /* Base64Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64Image.swift; sourceTree = "<group>"; };
 		C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListItem.swift; sourceTree = "<group>"; };
+		C34B61082A73B00600FFC1B8 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		C34B610A2A73B83900FFC1B8 /* CurrentUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserResponse.swift; sourceTree = "<group>"; };
+		C34B610C2A73B8DF00FFC1B8 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		C34B610E2A73BA3F00FFC1B8 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		C34B61102A74008F00FFC1B8 /* StrIdInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrIdInterface.swift; sourceTree = "<group>"; };
 		C34C8EAD2A69152300582EAE /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		C34C8EB52A692BFC00582EAE /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		C34C8EB92A693C6F00582EAE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -93,6 +133,15 @@
 		C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingModelResponse.swift; sourceTree = "<group>"; };
 		C3671AD02A70FE38004F360D /* TradingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingRepository.swift; sourceTree = "<group>"; };
 		C3671AD22A711EC7004F360D /* BuySellBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellBtnView.swift; sourceTree = "<group>"; };
+		C3671AD42A715148004F360D /* LoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
+		C3671AD62A715352004F360D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C3671AD82A716255004F360D /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		C3671ADA2A716266004F360D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C3671ADC2A7168E4004F360D /* DashboardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRepository.swift; sourceTree = "<group>"; };
+		C3671ADE2A716A6A004F360D /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		C3671AE02A716B13004F360D /* CryptoWalletItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletItem.swift; sourceTree = "<group>"; };
+		C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletResponse.swift; sourceTree = "<group>"; };
+		C3671AE42A716F5C004F360D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		C3A437642A6E7D8000482FAE /* TradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingView.swift; sourceTree = "<group>"; };
 		C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
 		C3A437682A6E902400482FAE /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
@@ -112,6 +161,10 @@
 		C3CAA50B2A657BCF00C1D3B7 /* CryptoWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CAA50F2A657BCF00C1D3B7 /* CryptoWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletUITests.swift; sourceTree = "<group>"; };
 		C3CAA5112A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3DFF4872A779A3C006CB15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C3DFF4992A77A1DF006CB15B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		C3DFF49D2A77A22E006CB15B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		C3DFF4A22A77F428006CB15B /* TabViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewImage.swift; sourceTree = "<group>"; };
 		C3E861492A68191F0076591B /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +173,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33A0C5E2A72978900BEBA38 /* RealmSwift in Frameworks */,
+				C33A0C5C2A72978900BEBA38 /* Realm in Frameworks */,
 				C3E861482A6818E90076591B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +205,11 @@
 				C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */,
 				C3A437642A6E7D8000482FAE /* TradingView.swift */,
 				C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */,
+				C3671AD42A715148004F360D /* LoggedInView.swift */,
+				C3671AD62A715352004F360D /* DashboardView.swift */,
+				C3671AD82A716255004F360D /* UserView.swift */,
+				C3671ADA2A716266004F360D /* SettingsView.swift */,
+				C34B61082A73B00600FFC1B8 /* SplashScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,8 +230,13 @@
 		C3460AFB2A6FF8F2000CAB0A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C34B610C2A73B8DF00FFC1B8 /* CurrentUser.swift */,
 				C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */,
 				C3671ACC2A70FCE8004F360D /* TradingModel.swift */,
+				C3671ADE2A716A6A004F360D /* WalletModel.swift */,
+				C3671AE02A716B13004F360D /* CryptoWalletItem.swift */,
+				C33A0C522A726EB800BEBA38 /* SuccessSell.swift */,
+				C33A0C5F2A729BC600BEBA38 /* CryptocurrencyStorage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +252,8 @@
 				C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */,
 				C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemResponse.swift */,
 				C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */,
+				C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */,
+				C34B610A2A73B83900FFC1B8 /* CurrentUserResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +263,9 @@
 			children = (
 				C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */,
 				C3A4376A2A6E907600482FAE /* CryptoRepositoryInterface.swift */,
+				C33A0C4E2A724A6500BEBA38 /* TradingRepositoryInterface.swift */,
+				C33A0C502A724A8100BEBA38 /* DashboardRepositoryInterface.swift */,
+				C34B61102A74008F00FFC1B8 /* StrIdInterface.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -207,6 +277,7 @@
 				C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */,
 				C35236492A67ECAA009C9951 /* ColorExtView.swift */,
 				C3460AF72A6FC87D000CAB0A /* Base64Image.swift */,
+				C3DFF4A22A77F428006CB15B /* TabViewImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +285,8 @@
 		C3CAA4E82A657BCE00C1D3B7 = {
 			isa = PBXGroup;
 			children = (
+				C3DFF49D2A77A22E006CB15B /* Roboto-Light.ttf */,
+				C3DFF4992A77A1DF006CB15B /* Roboto-Thin.ttf */,
 				C3CAA4F32A657BCE00C1D3B7 /* CryptoWallet */,
 				C3CAA5042A657BCF00C1D3B7 /* CryptoWalletTests */,
 				C3CAA50E2A657BCF00C1D3B7 /* CryptoWalletUITests */,
@@ -234,6 +307,7 @@
 		C3CAA4F32A657BCE00C1D3B7 /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				C3DFF4872A779A3C006CB15B /* Info.plist */,
 				C3E861422A6813C70076591B /* ModelView */,
 				C31CD1122A668ECF00975D39 /* View */,
 				C3E861412A6813BD0076591B /* Model */,
@@ -278,6 +352,8 @@
 				C3A437682A6E902400482FAE /* CryptoRepository.swift */,
 				C34C8EB52A692BFC00582EAE /* UserRepository.swift */,
 				C3671AD02A70FE38004F360D /* TradingRepository.swift */,
+				C3671ADC2A7168E4004F360D /* DashboardRepository.swift */,
+				C33A0C582A72964200BEBA38 /* DatabaseService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +367,8 @@
 				C34C8EC32A697C6900582EAE /* LoginViewModel.swift */,
 				C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */,
 				C3671ACA2A70FC8B004F360D /* TradingViewModel.swift */,
+				C3671AE42A716F5C004F360D /* DashboardViewModel.swift */,
+				C34B610E2A73BA3F00FFC1B8 /* SplashScreenViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -313,6 +391,8 @@
 			name = CryptoWallet;
 			packageProductDependencies = (
 				C3E861472A6818E90076591B /* Alamofire */,
+				C33A0C5B2A72978900BEBA38 /* Realm */,
+				C33A0C5D2A72978900BEBA38 /* RealmSwift */,
 			);
 			productName = CryptoWallet;
 			productReference = C3CAA4F12A657BCE00C1D3B7 /* CryptoWallet.app */;
@@ -388,6 +468,7 @@
 			mainGroup = C3CAA4E82A657BCE00C1D3B7;
 			packageReferences = (
 				C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = C3CAA4F22A657BCE00C1D3B7 /* Products */;
 			projectDirPath = "";
@@ -407,6 +488,8 @@
 			files = (
 				C3CAA4FC2A657BCF00C1D3B7 /* Preview Assets.xcassets in Resources */,
 				C3CAA4F92A657BCF00C1D3B7 /* Assets.xcassets in Resources */,
+				C3DFF49E2A77A22E006CB15B /* Roboto-Light.ttf in Resources */,
+				C3DFF49A2A77A1E0006CB15B /* Roboto-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +497,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DFF49F2A77A22E006CB15B /* Roboto-Light.ttf in Resources */,
+				C3DFF49B2A77A1E0006CB15B /* Roboto-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +506,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DFF4A02A77A22E006CB15B /* Roboto-Light.ttf in Resources */,
+				C3DFF49C2A77A1E0006CB15B /* Roboto-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,39 +519,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				C34C8EBC2A69575900582EAE /* UserPostModel.swift in Sources */,
+				C3671AE12A716B13004F360D /* CryptoWalletItem.swift in Sources */,
+				C3671AE32A716B62004F360D /* CryptoWalletResponse.swift in Sources */,
 				C3C9EF792A6AA56800B0CE4D /* UserRepositoryInterface.swift in Sources */,
+				C33A0C602A729BC600BEBA38 /* CryptocurrencyStorage.swift in Sources */,
 				C3671ACF2A70FE0C004F360D /* TradingModelResponse.swift in Sources */,
 				C31CD1192A669A0800975D39 /* PassFieldComponentView.swift in Sources */,
+				C33A0C592A72964200BEBA38 /* DatabaseService.swift in Sources */,
 				C34C8EC42A697C6900582EAE /* LoginViewModel.swift in Sources */,
 				C3A437672A6E8DD200482FAE /* CryptoListViewModel.swift in Sources */,
 				C34C8EBA2A693C6F00582EAE /* PostModel.swift in Sources */,
 				C3671ACB2A70FC8B004F360D /* TradingViewModel.swift in Sources */,
 				C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */,
 				C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */,
+				C3671AD92A716255004F360D /* UserView.swift in Sources */,
 				C31CD1152A6692C100975D39 /* ButtonComponentView.swift in Sources */,
 				C34C8EBE2A69579200582EAE /* JwtModel.swift in Sources */,
+				C34B610F2A73BA3F00FFC1B8 /* SplashScreenViewModel.swift in Sources */,
+				C34B61092A73B00600FFC1B8 /* SplashScreenView.swift in Sources */,
 				C3A4376B2A6E907600482FAE /* CryptoRepositoryInterface.swift in Sources */,
 				C3C9EF772A6A8B6800B0CE4D /* UserModel.swift in Sources */,
 				C3671AD32A711EC7004F360D /* BuySellBtnView.swift in Sources */,
 				C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */,
 				C31CD1172A6698C000975D39 /* TextFieldComponentView.swift in Sources */,
 				C34C8EAE2A69152300582EAE /* Networker.swift in Sources */,
+				C33A0C532A726EB800BEBA38 /* SuccessSell.swift in Sources */,
+				C3671AE52A716F5C004F360D /* DashboardViewModel.swift in Sources */,
 				C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */,
 				C3460AFD2A6FF947000CAB0A /* CryptoListItem.swift in Sources */,
+				C3671AD52A715148004F360D /* LoggedInView.swift in Sources */,
+				C3671ADF2A716A6A004F360D /* WalletModel.swift in Sources */,
 				C3460AF82A6FC87D000CAB0A /* Base64Image.swift in Sources */,
+				C34B61112A74008F00FFC1B8 /* StrIdInterface.swift in Sources */,
+				C34B610D2A73B8DF00FFC1B8 /* CurrentUser.swift in Sources */,
+				C3DFF4A32A77F428006CB15B /* TabViewImage.swift in Sources */,
 				C3C9EF752A6A8AFE00B0CE4D /* UserDefaultsController.swift in Sources */,
 				C3CAA4F52A657BCE00C1D3B7 /* CryptoWalletApp.swift in Sources */,
+				C3671ADB2A716266004F360D /* SettingsView.swift in Sources */,
 				C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */,
 				C34C8EC22A69681500582EAE /* UserLoginModel.swift in Sources */,
 				C34C8EC02A695C8000582EAE /* EmptyModel.swift in Sources */,
+				C34B610B2A73B83900FFC1B8 /* CurrentUserResponse.swift in Sources */,
+				C3671AD72A715352004F360D /* DashboardView.swift in Sources */,
 				C3C9EF7D2A6AC60000B0CE4D /* CryptoListItemResponse.swift in Sources */,
 				C3E8614A2A68191F0076591B /* CreateAccountViewModel.swift in Sources */,
+				C33A0C4F2A724A6500BEBA38 /* TradingRepositoryInterface.swift in Sources */,
 				C3A437692A6E902400482FAE /* CryptoRepository.swift in Sources */,
+				C33A0C512A724A8100BEBA38 /* DashboardRepositoryInterface.swift in Sources */,
 				C3671AD12A70FE38004F360D /* TradingRepository.swift in Sources */,
 				C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */,
 				C352364A2A67ECAA009C9951 /* ColorExtView.swift in Sources */,
 				C35236462A67D359009C9951 /* GradientExtView.swift in Sources */,
 				C34C8EB62A692BFC00582EAE /* UserRepository.swift in Sources */,
+				C3671ADD2A7168E4004F360D /* DashboardRepository.swift in Sources */,
 				C3671ACD2A70FCE8004F360D /* TradingModel.swift in Sources */,
 				C3C9EF7B2A6ABE2200B0CE4D /* CryptoListView.swift in Sources */,
 			);
@@ -474,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DFF4A42A77F428006CB15B /* TabViewImage.swift in Sources */,
 				C3CAA5062A657BCF00C1D3B7 /* CryptoWalletTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +592,7 @@
 			files = (
 				C3CAA5122A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift in Sources */,
 				C3CAA5102A657BCF00C1D3B7 /* CryptoWalletUITests.swift in Sources */,
+				C3DFF4A52A77F428006CB15B /* TabViewImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +736,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoWallet/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -655,6 +765,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoWallet/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -787,6 +898,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.41.1;
+			};
+		};
 		C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -798,6 +917,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C33A0C5B2A72978900BEBA38 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C33A0C5D2A72978900BEBA38 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		C3E861472A6818E90076591B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */;

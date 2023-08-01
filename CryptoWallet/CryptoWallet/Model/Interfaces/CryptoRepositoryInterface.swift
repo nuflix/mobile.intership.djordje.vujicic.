@@ -12,4 +12,5 @@ import Alamofire
 
 protocol CryptoRepositoryInterface {
     func getCrypto () -> AnyPublisher<[CryptoListItem], AFError>
+    func find(id: String) -> CryptoWalletItem?
 }

@@ -5,28 +5,29 @@
 //  Created by Administrator on 7/20/23.
 //
 
-import Foundation
 import Alamofire
 import Combine
+import Foundation
 
 class UserRepository: UserRepositoryInterface {
-    
-    func createAccount (request: UserPostModel) -> AnyPublisher<EmptyModel, AFError> {
-        
-        
+    func createAccount(request: UserPostModel) -> AnyPublisher<EmptyModel, AFError> {
         return Networker.shared.fetch(url: "/users/register", request: request.self, method: .post).map { (responseData: EmptyModel) in
-            return responseData as EmptyModel
-        }.eraseToAnyPublisher()
-        
+            responseData as EmptyModel
+        }
+        .eraseToAnyPublisher()
     }
-    
-    func login (request: UserLoginModel) -> AnyPublisher<JwtModel, AFError> {
-        
-        
+
+    func login(request: UserLoginModel) -> AnyPublisher<JwtModel, AFError> {
         return Networker.shared.fetch(url: "/users/login", request: request.self, method: .post).map { (responseData: JwtModel) in
-            return responseData
-        }.eraseToAnyPublisher()
-        
+            responseData
+        }
+        .eraseToAnyPublisher()
     }
-    
+
+    func checkIfLogged() -> AnyPublisher<CurrentUser, AFError> {
+        return Networker.shared.fetchWithoutReq(url: "/users/current", method: .get).map { (response: CurrentUserResponse) in
+            response.toDomain()
+        }
+        .eraseToAnyPublisher()
+    }
 }

@@ -23,9 +23,10 @@ struct LoginView: View {
                         stackView()
                         
                         Spacer()
-                        NavigationLink(destination: CryptoListView(viewModel: CryptoListViewModel(repository: CryptoRepository()))) {
+                        NavigationLink(destination: LoggedInView()) {
                             Text("Crypto List")
                         }
+                        
                         ButtonComponentView(text: "Login")
                             .onTapGesture {
                                 viewModel.login()

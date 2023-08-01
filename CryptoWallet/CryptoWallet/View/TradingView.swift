@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TradingView: View {
     @StateObject var viewModel: TradingViewModel
-    @State var currUserVal = "2.73"
     @State var tradeVal = "0 USD"
     @State var enterVal = "0.0"
     @State var activeBuy = true
@@ -39,7 +38,7 @@ struct TradingView: View {
                             title: Text("Are you sure you want to \(activeBuy ? "buy" : "sell") \(enterVal) \(viewModel.model.abbreviation.uppercased()) for price of \(tradeVal)"),
                             primaryButton: .default(Text("Confirm")) {
                                 // Perform the action here.
-                                print("Hello")
+                                activeBuy ? viewModel.buy(val: Double(enterVal) ?? 0.0) : viewModel.sell(val: Double(enterVal) ?? 0.0)
                             },
                             secondaryButton: .cancel()
                         )
@@ -89,7 +88,7 @@ struct TradingView: View {
                 .font(.system(size: 14))
                 .foregroundColor(.gray)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            TextFieldComponentView(placeholder: "", text: $currUserVal, disabled: true)
+            TextFieldComponentView(placeholder: "", text: $viewModel.curVal, disabled: true)
                 .padding(.bottom, 20)
             Text("Trade value")
                 .font(.system(size: 14))

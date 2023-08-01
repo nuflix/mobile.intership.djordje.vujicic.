@@ -11,7 +11,7 @@ import SwiftUI
 struct CryptoWalletApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView(viewModel: LoginViewModel(repository: UserRepository()))
+            SplashScreenView(viewModel: SplashScreenViewModel(repository: UserRepository()))
         }
     }
 }
