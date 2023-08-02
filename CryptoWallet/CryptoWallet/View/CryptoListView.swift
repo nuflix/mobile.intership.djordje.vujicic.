@@ -9,11 +9,10 @@ import SwiftUI
 
 struct CryptoListView: View {
     @StateObject var viewModel: CryptoListViewModel
-    
-    
+
     var body: some View {
         NavigationView {
-            VStack{
+            VStack {
                 Text("Add to your wallet")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading)
@@ -26,15 +25,12 @@ struct CryptoListView: View {
             .accentColor(.white)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .bottom), for: .navigationBar)
-            
         }
-        .onAppear() {
+        .onAppear {
             viewModel.getCrypto()
         }
-        
     }
-    
-    
+
     func listView() -> some View {
         return List {
             ForEach(viewModel.items) { item in
@@ -42,24 +38,28 @@ struct CryptoListView: View {
                     HStack {
                         Image(base64String: item.icon)?
                             .resizable()
-                            .frame(width: 40, height:  40)
+                            .frame(width: 40, height: 40)
+
                         VStack(alignment: .leading) {
                             Text("\(item.name) (\(item.abbreviation.uppercased()))")
                                 .fontWeight(.bold)
-                            Text("\(item.valueOfOne)$")
+                            Text(String(format: "$%.2f", item.valueOfOne))
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                         }
                         .padding(.leading)
                     }
+                    .padding(.vertical, 15)
+                }
+                .alignmentGuide(.listRowSeparatorLeading) { dimension in
+                    dimension[.leading]
                 }
             }
         }
         .listStyle(.plain)
+        .padding(.trailing, 20)
     }
-    
 }
-
 
 struct CryptoListView_Previews: PreviewProvider {
     static var previews: some View {

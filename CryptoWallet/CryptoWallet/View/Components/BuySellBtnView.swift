@@ -8,31 +8,24 @@
 import SwiftUI
 
 struct BuySellBtnView: View {
-    @Binding var active: Bool
+    @State var selectedTab = 0
+    @Binding var isActiveBuy: Bool
     let text: String
+    
     var body: some View {
         retBtn()
     }
     
     @ViewBuilder func retBtn() -> some View {
-        if(active) {
-            Button(text) {
-                
-            }
-            .padding(.vertical, 5)
-            .padding(.horizontal, 60)
-            .foregroundColor(.white)
-            .background(Color("greenGrad"))
-            
-        } else {
-            Button(text) {
-                
-            }
-            .padding(.vertical, 5)
-            .padding(.horizontal, 60)
-            .foregroundColor(.black)
-            .background(Color(.white))
+        Picker("", selection: $selectedTab) {
+            Text("buy").tag(0)
+            Text("sell").tag(1)
         }
+        .onChange(of: selectedTab, perform: { newValue in
+            isActiveBuy = (0 == newValue)
+        })
+        .colorMultiply(.greenGrad)
+        .pickerStyle(.segmented)
     }
     
 }

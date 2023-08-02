@@ -28,7 +28,7 @@ struct LoggedInView: View {
                     currentPage = curPage.cryptoList
                 }
 
-            UserView()
+            UserView(text: "", cardText: "", viewModel: UserInfoViewModel(user: CurrentUser(currentCardBalance: 0, email: "", firstName: "", lastName: ""), repository: UserInfoRepository()))
                 .tabItem {
                     Label("", image: currentPage == curPage.userV ? userIconSelected : userIcon)
                 }
@@ -36,7 +36,7 @@ struct LoggedInView: View {
                     currentPage = curPage.userV
                 }
 
-            SettingsView()
+            SettingsView(viewModel: SettingsViewModel(repository: UserRepository()))
                 .tabItem {
                     Label("", image: currentPage == curPage.settingsV ? settingsIconSelected : settingsIcon)
                 }

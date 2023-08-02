@@ -10,6 +10,12 @@ import Combine
 import Foundation
 
 class UserRepository: UserRepositoryInterface {
+    
+    func logout() {
+        UserDefaultsController.deleteUser()
+        DatabaseService.shared.deleteData()
+    }
+    
     func createAccount(request: UserPostModel) -> AnyPublisher<EmptyModel, AFError> {
         return Networker.shared.fetch(url: "/users/register", request: request.self, method: .post).map { (responseData: EmptyModel) in
             responseData as EmptyModel

@@ -84,7 +84,7 @@ struct DashboardView: View {
                         VStack(alignment: .leading) {
                             Text("\(item.abbreviation.uppercased())")
                                 .fontWeight(.bold)
-                            Text("$\(item.valueOfOne)")
+                            Text(String(format: "$%.2f", item.valueOfOne))
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                         }
@@ -93,18 +93,19 @@ struct DashboardView: View {
                         Spacer()
                         
                         VStack(alignment: .trailing) {
-                            Text("$\(String(item.valueOfOne * item.sum))")
+                            Text(String(format: "$%.2f", item.valueOfOne * item.sum))
                                 .fontWeight(.bold)
-                            Text("\(item.sum) \(item.abbreviation.uppercased())")
+                            Text(String(format: "%.2f\(item.abbreviation.uppercased())", item.sum))
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                         }
-                        .padding(.trailing)
+                        
                     }
                     
                 }
             }
         }
+        .padding(.trailing, 20)
         .listStyle(.plain)
     }
     

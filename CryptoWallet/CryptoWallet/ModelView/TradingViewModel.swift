@@ -30,7 +30,6 @@ class TradingViewModel: ObservableObject {
                 print("Success")
             self?.curVal = String(Double(self?.curVal ?? "0")! + val)
             self?.updateCrypto()
-            //ovdje treba da ide logika za database
         }).store(in: &tokens)
 
     }
@@ -42,7 +41,6 @@ class TradingViewModel: ObservableObject {
             if response.message == "success" {
                 self?.curVal = String(Double(self?.curVal ?? "0")! - val)
                 self?.updateCrypto()
-                //ovdje treba da ide logika za database
             } else {
                 print(response.message)
             }

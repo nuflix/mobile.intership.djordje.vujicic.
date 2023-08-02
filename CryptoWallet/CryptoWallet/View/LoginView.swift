@@ -23,14 +23,9 @@ struct LoginView: View {
                         stackView()
                         
                         Spacer()
-                        NavigationLink(destination: LoggedInView()) {
-                            Text("Crypto List")
-                        }
                         
-                        ButtonComponentView(text: "Login")
-                            .onTapGesture {
-                                viewModel.login()
-                            }
+                        ButtonComponentView(text: "Login", tapGesture: viewModel.login)
+                            .fullScreenCover(isPresented: $viewModel.isLogged, content: LoggedInView.init)
                         HStack {
                             Text("Don't have an account?")
                             NavigationLink(destination: CreateAccountView(viewModel: CreateAccountViewModel(repository: UserRepository()))){

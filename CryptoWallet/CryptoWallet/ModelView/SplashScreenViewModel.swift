@@ -20,6 +20,7 @@ class SplashScreenViewModel: ObservableObject {
     func checkIfLogged() {
         repository.checkIfLogged().sink { error in
             print(error)
+            print("jwt: "+UserDefaultsController.getJwt())
         } receiveValue: { [weak self] _ in
             self?.isLogged = true
         }.store(in: &tokens)

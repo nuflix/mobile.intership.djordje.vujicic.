@@ -9,20 +9,24 @@ import Foundation
 
 class UserDefaultsController {
     public static func saveUser(user: UserModel) {
-        UserDefaults.standard.set(user.email, forKey: "email")
-        UserDefaults.standard.set(user.fName, forKey: "fName")
-        UserDefaults.standard.set(user.lName, forKey: "lName")
+        UserDefaults.standard.set(user, forKey: "user")
     }
-    
+
     public static func saveJwt(jwt: JwtModel) {
         UserDefaults.standard.set(jwt.jwtToken, forKey: "jwt")
+        print(getJwt())
     }
-    
+
     public static func getUser() -> UserModel? {
-        return UserModel(email: UserDefaults.standard.string(forKey: "email") ?? "", fName: UserDefaults.standard.string(forKey: "fName") ?? "", lName: UserDefaults.standard.string(forKey: "lName") ?? "")
+        return UserDefaults.standard.object(forKey: "user") as? UserModel ?? UserModel(email: "", fName: "", lName: "")
     }
-    
-    public static func getJwt() -> String? {
-        return UserDefaults.standard.string(forKey: "jwt") ?? nil
+
+    public static func getJwt() -> String {
+        return UserDefaults.standard.string(forKey: "jwt") ?? ""
+    }
+
+    public static func deleteUser() {
+        UserDefaults.standard.setValue("", forKey: "jwt")
+        UserDefaults.standard.removeObject(forKey: "user")
     }
 }

@@ -12,7 +12,6 @@ struct TradingView: View {
     @State var tradeVal = "0 USD"
     @State var enterVal = "0.0"
     @State var activeBuy = true
-    @State var activeSell = false
     @State private var isPresentingConfirm: Bool = false
 
     var body: some View {
@@ -29,15 +28,11 @@ struct TradingView: View {
 
                 textBoxArea()
                 Spacer()
-                ButtonComponentView(text: "Submit")
-                    .onTapGesture {
-                        isPresentingConfirm = true
-                    }
+                ButtonComponentView(text: "Submit", tapGesture: showAlert)
                     .alert(isPresented: $isPresentingConfirm) {
                         Alert(
                             title: Text("Are you sure you want to \(activeBuy ? "buy" : "sell") \(enterVal) \(viewModel.model.abbreviation.uppercased()) for price of \(tradeVal)"),
                             primaryButton: .default(Text("Confirm")) {
-                                // Perform the action here.
                                 activeBuy ? viewModel.buy(val: Double(enterVal) ?? 0.0) : viewModel.sell(val: Double(enterVal) ?? 0.0)
                             },
                             secondaryButton: .cancel()
@@ -50,6 +45,10 @@ struct TradingView: View {
         .onAppear {
             viewModel.fetchModel()
         }
+    }
+    
+    func showAlert() {
+        isPresentingConfirm = true
     }
 
     func header() -> some View {
@@ -69,16 +68,7 @@ struct TradingView: View {
 
     func buySell() -> some View {
         HStack {
-            BuySellBtnView(active: $activeBuy, text: "Buy")
-                .onTapGesture {
-                    activeBuy = true
-                    activeSell = false
-                }
-            BuySellBtnView(active: $activeSell, text: "Sell")
-                .onTapGesture {
-                    activeBuy = false
-                    activeSell = true
-                }
+            BuySellBtnView(isActiveBuy: $activeBuy, text: "Buy")
         }
     }
 

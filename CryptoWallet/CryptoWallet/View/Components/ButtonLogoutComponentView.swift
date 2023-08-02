@@ -1,21 +1,21 @@
 //
-//  ButtonComponentView.swift
+//  ButtonLogoutComponentView.swift
 //  CryptoWallet
 //
-//  Created by Administrator on 7/18/23.
+//  Created by Administrator on 8/1/23.
 //
 
 import SwiftUI
 
-struct ButtonComponentView: View {
+struct ButtonLogoutComponentView: View {
     let text: String
     let tapGesture: () -> Void
-    
+
     init(text: String, tapGesture: @escaping () -> Void) {
         self.text = text
         self.tapGesture = tapGesture
     }
-
+    
     var body: some View {
         Button {
             tapGesture()
@@ -24,12 +24,12 @@ struct ButtonComponentView: View {
                 .bold()
                 .padding()
                 .foregroundColor(.white)
-                .frame(minWidth: 200)
+                .frame(maxWidth: 500)
                 .background(.linearGradient(.greenGrad, startPoint: .top, endPoint: .bottom))
-                .cornerRadius(25)
+                .cornerRadius(15)
                 .shadow(color: .gray, radius: 3, x: 0, y: 5)
                 .padding()
         }
-
+     
     }
 }

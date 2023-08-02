@@ -52,12 +52,9 @@ struct SplashScreenView: View {
     
     
     @ViewBuilder func displayScreen() -> some View {
-  
-       if viewModel.isLogged {
-            LoggedInView()
-        } else {
-            LoginView(viewModel: LoginViewModel(repository: UserRepository()))
-        }
+      
+           LoginView(viewModel: LoginViewModel(repository: UserRepository()))
+            .fullScreenCover(isPresented: $viewModel.isLogged, content: LoggedInView.init)
         
     }
     

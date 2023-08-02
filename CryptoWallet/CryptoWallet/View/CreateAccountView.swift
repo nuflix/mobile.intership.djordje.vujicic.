@@ -12,7 +12,7 @@ struct CreateAccountView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             ZStack {
                 LinearGradient(gradient: .blueGrad, startPoint: .top, endPoint: .center)
                     .edgesIgnoringSafeArea(.top)
@@ -25,10 +25,8 @@ struct CreateAccountView: View {
                         stackView()
                         Spacer()
                         
-                        ButtonComponentView(text: "Create Account")
-                            .onTapGesture {
-                                viewModel.createAccount()
-                            }
+                        ButtonComponentView(text: "Create Account", tapGesture: viewModel.createAccount)
+                            .fullScreenCover(isPresented: $viewModel.isLogged, content: LoggedInView.init)
                         HStack {
                             Text("Already have an account?")
                             LinkTextComponentView(text: "Login")
@@ -43,7 +41,7 @@ struct CreateAccountView: View {
                     .frame(minHeight: 500)
                 }
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     
     @ViewBuilder func showImage() -> some View {
