@@ -98,7 +98,7 @@ struct DashboardView: View {
                         VStack(alignment: .trailing) {
                             Text(String(format: "$%.2f", item.valueOfOne * item.sum))
                                 .fontWeight(.bold)
-                            Text(String(format: "%.2f\(item.abbreviation.uppercased())", item.sum))
+                            Text(String(format: "%.2f \(item.abbreviation.uppercased())", item.sum))
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                         }
