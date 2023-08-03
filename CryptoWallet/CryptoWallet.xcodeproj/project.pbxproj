@@ -58,6 +58,7 @@
 		C3671AE32A716B62004F360D /* CryptoWalletResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */; };
 		C3671AE52A716F5C004F360D /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE42A716F5C004F360D /* DashboardViewModel.swift */; };
 		C370F6A42A7A6F2100389169 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370F6A32A7A6F2100389169 /* SettingsViewModel.swift */; };
+		C370F6A82A7A856800389169 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370F6A72A7A856800389169 /* Router.swift */; };
 		C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437642A6E7D8000482FAE /* TradingView.swift */; };
 		C3A437672A6E8DD200482FAE /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */; };
 		C3A437692A6E902400482FAE /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437682A6E902400482FAE /* CryptoRepository.swift */; };
@@ -154,6 +155,7 @@
 		C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletResponse.swift; sourceTree = "<group>"; };
 		C3671AE42A716F5C004F360D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		C370F6A32A7A6F2100389169 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C370F6A72A7A856800389169 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C3A437642A6E7D8000482FAE /* TradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingView.swift; sourceTree = "<group>"; };
 		C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
 		C3A437682A6E902400482FAE /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 				C3671ADC2A7168E4004F360D /* DashboardRepository.swift */,
 				C33A0C582A72964200BEBA38 /* DatabaseService.swift */,
 				C34BB1632A78FFE40063A25D /* UserInfoRepository.swift */,
+				C370F6A72A7A856800389169 /* Router.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				C31CD1172A6698C000975D39 /* TextFieldComponentView.swift in Sources */,
 				C34C8EAE2A69152300582EAE /* Networker.swift in Sources */,
 				C33A0C532A726EB800BEBA38 /* SuccessSell.swift in Sources */,
+				C370F6A82A7A856800389169 /* Router.swift in Sources */,
 				C3671AE52A716F5C004F360D /* DashboardViewModel.swift in Sources */,
 				C35236482A67DA65009C9951 /* RoundedCornersExtView.swift in Sources */,
 				C3460AFD2A6FF947000CAB0A /* CryptoListItem.swift in Sources */,

@@ -62,6 +62,10 @@ class DatabaseService {
                 obj.valueOfOne = ob.valueOfOne
                 obj.sum = ob.sum
             }
+        } else {
+            try! realm.write {
+                realm.add(ob)
+            }
         }
        
     }

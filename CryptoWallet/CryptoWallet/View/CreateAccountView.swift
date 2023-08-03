@@ -9,47 +9,56 @@ import SwiftUI
 
 struct CreateAccountView: View {
     @StateObject var viewModel: CreateAccountViewModel
-    @Environment(\.dismiss) private var dismiss
-    
+    @EnvironmentObject var router: Router
+
     var body: some View {
-        NavigationView {
-            ZStack {
-                LinearGradient(gradient: .blueGrad, startPoint: .top, endPoint: .center)
-                    .edgesIgnoringSafeArea(.top)
-                
+        ZStack {
+            LinearGradient(gradient: .blueGrad, startPoint: .top, endPoint: .center)
+                .edgesIgnoringSafeArea(.top)
+
+            VStack {
+                TitleTextComponentView(title: "Create Account")
+                Spacer()
+                showImage()
+
                 VStack {
-                    TitleTextComponentView(title: "Create Account")
-                    showImage()
-                    
-                    VStack {
-                        stackView()
-                        Spacer()
-                        
-                        ButtonComponentView(text: "Create Account", tapGesture: viewModel.createAccount)
-                            .fullScreenCover(isPresented: $viewModel.isLogged, content: LoggedInView.init)
-                        HStack {
-                            Text("Already have an account?")
-                            LinkTextComponentView(text: "Login")
-                                .onTapGesture {
-                                dismiss()
-                            }
+                    stackView()
+                        .frame(minHeight: 290)
+                    Spacer()
+
+                    ButtonComponentView(text: "Create Account", tapGesture: viewModel.createAccount)
+                        .onReceive(viewModel.isLogged) { _ in
+
+                            router.navigate(to: .loggedIn)
                         }
-                        .padding(.bottom, 50)
-                    }
-                    .background()
-                    .cornerRadius(25, corners: [.topLeft, .topRight])
-                    .frame(minHeight: 500)
+                    showLogin()
                 }
+                .frame(minHeight: 350)
+                .background(.white)
+                .cornerRadius(25, corners: [.topLeft, .topRight])
             }
-        }.navigationBarBackButtonHidden(true)
+        }
+        .navigationBarBackButtonHidden(true)
     }
-    
+
     @ViewBuilder func showImage() -> some View {
         if !viewModel.isVisible {
             Image("office")
         }
     }
-    
+
+    @ViewBuilder func showLogin() -> some View {
+        if !viewModel.isVisible {
+            HStack {
+                Text("Already have an account?")
+                LinkTextComponentView(text: "Login")
+                    .onTapGesture {
+                        router.navigateBack()
+                    }
+            }
+            .padding(.bottom, 50)
+        }
+    }
 }
 
 struct CreateAccountView_Previews: PreviewProvider {
@@ -65,7 +74,7 @@ private extension CreateAccountView {
                 .padding()
             TextFieldComponentView(placeholder: "Last Name", text: $viewModel.lName, disabled: false)
                 .padding()
-            TextFieldComponentView(placeholder: "Email Address", text:$viewModel.email, disabled: false)
+            TextFieldComponentView(placeholder: "Email Address", text: $viewModel.email, disabled: false)
                 .padding()
             PassFieldComponentView(placeholder: "Password", pass: $viewModel.pass)
                 .padding()

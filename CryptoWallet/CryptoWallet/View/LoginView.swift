@@ -9,40 +9,34 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject var viewModel: LoginViewModel
-    
+    @EnvironmentObject var router: Router
+
     var body: some View {
-        NavigationStack{
-            ZStack {
-                LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .center)
-                    .edgesIgnoringSafeArea(.top)
-                
+        ZStack {
+            LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .center)
+                .edgesIgnoringSafeArea(.top)
+
+            VStack {
+                TitleTextComponentView(title: "Welcome Back!")
+                Spacer()
+                showImg()
                 VStack {
-                    TitleTextComponentView(title: "Welcome Back!")
-                    showImg()
-                    VStack {
-                        stackView()
-                        
-                        Spacer()
-                        
-                        ButtonComponentView(text: "Login", tapGesture: viewModel.login)
-                            .fullScreenCover(isPresented: $viewModel.isLogged, content: LoggedInView.init)
-                        HStack {
-                            Text("Don't have an account?")
-                            NavigationLink(destination: CreateAccountView(viewModel: CreateAccountViewModel(repository: UserRepository()))){
-                                LinkTextComponentView(text: "Sign Up")
-                            }
+                    stackView()
+
+                    Spacer()
+
+                    ButtonComponentView(text: "Login", tapGesture: viewModel.login)
+                        .onReceive(viewModel.isLogged) { _ in
+                            router.navigate(to: .loggedIn)
                         }
-                        .padding(.bottom, 50)
-                    }
-                    .background()
-                    .cornerRadius(25, corners: [.topLeft, .topRight])
-                    .frame(minHeight: 500)
+                    showLogin()
                 }
+                .frame(minHeight: 400)
+                .background(.white)
+                .cornerRadius(25, corners: [.topLeft, .topRight])
             }
         }
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -61,12 +55,24 @@ private extension LoginView {
         }
         .padding(EdgeInsets(top: 30, leading: 5, bottom: 0, trailing: 5))
     }
-    
-    
+
     @ViewBuilder func showImg() -> some View {
         if !viewModel.isVisible {
             Image("login")
         }
-        
+    }
+
+    @ViewBuilder func showLogin() -> some View {
+        if !viewModel.isVisible {
+            HStack {
+                Text("Don't have an account?")
+
+                LinkTextComponentView(text: "Sign Up")
+                    .onTapGesture {
+                        router.navigate(to: .signup)
+                    }
+            }
+            .padding(.bottom, 50)
+        }
     }
 }

@@ -33,11 +33,15 @@ struct SettingsView: View {
                     }
                 Spacer()
             }
-            .navigationBarTitle("Settings")
-            .navigationBarTitleDisplayMode(.inline)
-            .accentColor(.white)
+            .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Text("Settings")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                    }
+            }
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarBackground(LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .bottom), for: .navigationBar)
+            .toolbarBackground(Color.navbarColor, for: .navigationBar)
         }
         .onChange(of: shouldDismiss) { newValue in
             if newValue {

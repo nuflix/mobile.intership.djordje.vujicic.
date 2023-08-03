@@ -45,11 +45,15 @@ struct UserView: View {
                         )
                     }
             }
-            .navigationBarTitle("User Info")
-            .navigationBarTitleDisplayMode(.inline)
-            .accentColor(.white)
+            .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Text("User Info")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                    }
+            }
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarBackground(LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .bottom), for: .navigationBar)
+            .toolbarBackground(Color.navbarColor, for: .navigationBar)
         }
         .onAppear {
             viewModel.getUser()

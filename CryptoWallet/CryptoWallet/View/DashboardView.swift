@@ -11,8 +11,6 @@ struct DashboardView: View {
     
     @StateObject var viewModel: DashboardViewModel
     
-
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -22,11 +20,16 @@ struct DashboardView: View {
                     .padding(.bottom, 20)
                 listView()
             }
-            .navigationBarTitle("Dashboard")
-            .navigationBarTitleDisplayMode(.inline)
-            .accentColor(.white)
+            .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Text("Dashboard")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                    }
+            }
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarBackground(LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .bottom), for: .navigationBar)
+            .toolbarBackground(Color.navbarColor, for: .navigationBar)
+
         }
         .navigationTitle("Dashboard")
             .onAppear {
@@ -41,7 +44,7 @@ struct DashboardView: View {
         return VStack {
             HStack(alignment: .top) {
                 VStack(alignment: .leading) {
-                    Text("$\(String(viewModel.model.totalBalance))")
+                    Text("$\(String(format: "%.2f", viewModel.model.totalBalance))")
                         .font(.system(size: 26))
                         .bold()
                         .foregroundColor(.white)

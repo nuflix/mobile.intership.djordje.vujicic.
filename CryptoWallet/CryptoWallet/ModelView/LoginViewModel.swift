@@ -8,7 +8,8 @@ class LoginViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var pass: String = ""
     @Published var isVisible: Bool = false
-    @Published var isLogged: Bool = false
+    var isLogged: AnyPublisher<Void, Never> { isLoggedSubject.eraseToAnyPublisher() }
+    private let isLoggedSubject = PassthroughSubject<Void, Never>()
     
     private let repository: UserRepositoryInterface
     var tokens: Set<AnyCancellable> = []
@@ -32,7 +33,7 @@ class LoginViewModel: ObservableObject {
             print("error: \(error)")
         } receiveValue: { [weak self] result in
             UserDefaultsController.saveJwt(jwt: result)
-            self?.isLogged.toggle()
+            self?.isLoggedSubject.send()
         }.store(in: &tokens)
     }
     

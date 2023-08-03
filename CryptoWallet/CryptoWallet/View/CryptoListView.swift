@@ -20,11 +20,15 @@ struct CryptoListView: View {
                     .foregroundColor(.gray)
                 listView()
             }
-            .navigationBarTitle("Crypto List")
-            .navigationBarTitleDisplayMode(.inline)
-            .accentColor(.white)
+            .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Text("Crypto List")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                    }
+            }
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarBackground(LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .bottom), for: .navigationBar)
+            .toolbarBackground(Color.navbarColor, for: .navigationBar)
         }
         .onAppear {
             viewModel.getCrypto()

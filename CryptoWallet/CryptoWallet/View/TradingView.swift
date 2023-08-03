@@ -13,6 +13,7 @@ struct TradingView: View {
     @State var enterVal = "0.0"
     @State var activeBuy = true
     @State private var isPresentingConfirm: Bool = false
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         NavigationView {
@@ -41,7 +42,24 @@ struct TradingView: View {
             }
             .padding(.all, 20)
         }
-        .navigationTitle(Text("Trading"))
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.white)
+                }
+            }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Trading")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                }
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarBackground(Color.navbarColor, for: .navigationBar)
         .onAppear {
             viewModel.fetchModel()
         }
@@ -56,7 +74,7 @@ struct TradingView: View {
             Image(base64String: viewModel.model.icon)?
                 .resizable()
                 .frame(width: 150, height: 150)
-            Text("$\(viewModel.model.valueOfOne)")
+            Text(String(format: "$%.2f", viewModel.model.valueOfOne))
                 .font(.system(size: 18))
                 .bold()
                 .padding(.bottom, 1)
