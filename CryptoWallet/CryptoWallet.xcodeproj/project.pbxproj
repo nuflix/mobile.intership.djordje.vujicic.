@@ -12,6 +12,7 @@
 		C31CD1192A669A0800975D39 /* PassFieldComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1182A669A0800975D39 /* PassFieldComponentView.swift */; };
 		C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
 		C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
+		C3345BBA2A7BCC3000C2A8B0 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3345BB92A7BCC3000C2A8B0 /* DIService.swift */; };
 		C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
 		C33A0C4F2A724A6500BEBA38 /* TradingRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C4E2A724A6500BEBA38 /* TradingRepositoryInterface.swift */; };
 		C33A0C512A724A8100BEBA38 /* DashboardRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C502A724A8100BEBA38 /* DashboardRepositoryInterface.swift */; };
@@ -111,6 +112,7 @@
 		C31CD1182A669A0800975D39 /* PassFieldComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassFieldComponentView.swift; sourceTree = "<group>"; };
 		C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTextComponentView.swift; sourceTree = "<group>"; };
 		C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextComponentView.swift; sourceTree = "<group>"; };
+		C3345BB92A7BCC3000C2A8B0 /* DIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIService.swift; sourceTree = "<group>"; };
 		C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		C33A0C4E2A724A6500BEBA38 /* TradingRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingRepositoryInterface.swift; sourceTree = "<group>"; };
 		C33A0C502A724A8100BEBA38 /* DashboardRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRepositoryInterface.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				C33A0C582A72964200BEBA38 /* DatabaseService.swift */,
 				C34BB1632A78FFE40063A25D /* UserInfoRepository.swift */,
 				C370F6A72A7A856800389169 /* Router.swift */,
+				C3345BB92A7BCC3000C2A8B0 /* DIService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				C34BB1642A78FFE40063A25D /* UserInfoRepository.swift in Sources */,
 				C3C9EF792A6AA56800B0CE4D /* UserRepositoryInterface.swift in Sources */,
 				C33A0C602A729BC600BEBA38 /* CryptocurrencyStorage.swift in Sources */,
+				C3345BBA2A7BCC3000C2A8B0 /* DIService.swift in Sources */,
 				C3671ACF2A70FE0C004F360D /* TradingModelResponse.swift in Sources */,
 				C31CD1192A669A0800975D39 /* PassFieldComponentView.swift in Sources */,
 				C33A0C592A72964200BEBA38 /* DatabaseService.swift in Sources */,

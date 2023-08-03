@@ -53,7 +53,7 @@ struct SplashScreenView: View {
     
     @ViewBuilder func displayScreen() -> some View {
       
-           LoginView(viewModel: LoginViewModel(repository: UserRepository()))
+           LoginView(viewModel: LoginViewModel(repository: DIService.shared.userRepository))
             .fullScreenCover(isPresented: $viewModel.isLogged, content: LoggedInView.init)
         
     }
@@ -62,6 +62,6 @@ struct SplashScreenView: View {
 
 struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashScreenView(viewModel: SplashScreenViewModel(repository: UserRepository()))
+        SplashScreenView(viewModel: SplashScreenViewModel(repository: DIService.shared.userRepository))
     }
 }

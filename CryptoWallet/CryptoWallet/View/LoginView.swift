@@ -41,7 +41,7 @@ struct LoginView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: LoginViewModel(repository: UserRepository()))
+        LoginView(viewModel: LoginViewModel(repository: DIService.shared.userRepository))
     }
 }
 

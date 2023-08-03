@@ -73,7 +73,7 @@ struct DashboardView: View {
     func listView() -> some View {
         return List {
             ForEach(viewModel.model.cryptocurrencies) { item in
-                NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: TradingRepository(), id: item.cryptocurrencyId, curVal: item.sum))) {
+                NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: DIService.shared.tradingRepository, id: item.cryptocurrencyId, curVal: item.sum))) {
                     VStack { }
                         .padding(.vertical, 40)
                 }
@@ -116,6 +116,6 @@ struct DashboardView: View {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView(viewModel: DashboardViewModel(repository: DashboardRepository()))
+        DashboardView(viewModel: DashboardViewModel(repository: DIService.shared.dashboardRepository))
     }
 }

@@ -15,13 +15,13 @@ struct CryptoWalletApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.navPath) {
-                SplashScreenView(viewModel: SplashScreenViewModel(repository: UserRepository()))
+                SplashScreenView(viewModel: SplashScreenViewModel(repository: DIService.shared.userRepository))
                     .navigationDestination(for: Router.Destination.self) { destination in
                                         switch destination {
                                         case .login:
-                                            LoginView(viewModel: LoginViewModel(repository: UserRepository()))
+                                            LoginView(viewModel: LoginViewModel(repository: DIService.shared.userRepository))
                                         case .signup:
-                                            CreateAccountView(viewModel: CreateAccountViewModel(repository: UserRepository()))
+                                            CreateAccountView(viewModel: CreateAccountViewModel(repository: DIService.shared.userRepository))
                                         case .loggedIn:
                                             LoggedInView()
                                         }

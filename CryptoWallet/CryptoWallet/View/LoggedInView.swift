@@ -12,7 +12,7 @@ struct LoggedInView: View {
 
     var body: some View {
         TabView {
-            DashboardView(viewModel: DashboardViewModel(repository: DashboardRepository()))
+            DashboardView(viewModel: DashboardViewModel(repository: DIService.shared.dashboardRepository))
                 .tabItem {
                     Label("", image: currentPage == curPage.dashboard ? dashboardIconSelected : dashboardIcon)
                 }
@@ -20,7 +20,7 @@ struct LoggedInView: View {
                     currentPage = curPage.dashboard
                 }
 
-            CryptoListView(viewModel: CryptoListViewModel(repository: CryptoRepository()))
+            CryptoListView(viewModel: CryptoListViewModel(repository: DIService.shared.cryptoRepository))
                 .tabItem {
                     Label("", image: currentPage == curPage.cryptoList ? cryptoListIconSelected : cryptoListIcon)
                 }
@@ -28,7 +28,7 @@ struct LoggedInView: View {
                     currentPage = curPage.cryptoList
                 }
 
-            UserView(text: "", cardText: "", viewModel: UserInfoViewModel(user: CurrentUser(currentCardBalance: 0, email: "", firstName: "", lastName: ""), repository: UserInfoRepository()))
+            UserView(text: "", cardText: "", viewModel: UserInfoViewModel(user: CurrentUser(currentCardBalance: 0, email: "", firstName: "", lastName: ""), repository: DIService.shared.userInfoRepository))
                 .tabItem {
                     Label("", image: currentPage == curPage.userV ? userIconSelected : userIcon)
                 }
@@ -36,7 +36,7 @@ struct LoggedInView: View {
                     currentPage = curPage.userV
                 }
 
-            SettingsView(viewModel: SettingsViewModel(repository: UserRepository()))
+            SettingsView(viewModel: SettingsViewModel(repository: DIService.shared.userRepository))
                 .tabItem {
                     Label("", image: currentPage == curPage.settingsV ? settingsIconSelected : settingsIcon)
                 }

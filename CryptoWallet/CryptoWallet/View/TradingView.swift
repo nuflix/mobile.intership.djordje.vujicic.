@@ -122,6 +122,6 @@ struct TradingView: View {
 
 struct TradingView_Previews: PreviewProvider {
     static var previews: some View {
-        TradingView(viewModel: TradingViewModel(repository: TradingRepository(), id: "bitcoin"))
+        TradingView(viewModel: TradingViewModel(repository: DIService.shared.tradingRepository, id: "bitcoin"))
     }
 }

@@ -38,7 +38,7 @@ struct CryptoListView: View {
     func listView() -> some View {
         return List {
             ForEach(viewModel.items) { item in
-                NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: TradingRepository(), id: item.id, curVal: viewModel.findCrypto(id: item.id)?.sum ?? 0))) {
+                NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: DIService.shared.tradingRepository, id: item.id, curVal: viewModel.findCrypto(id: item.id)?.sum ?? 0))) {
                     HStack {
                         Image(base64String: item.icon)?
                             .resizable()
@@ -67,6 +67,6 @@ struct CryptoListView: View {
 
 struct CryptoListView_Previews: PreviewProvider {
     static var previews: some View {
-        CryptoListView(viewModel: CryptoListViewModel(repository: CryptoRepository()))
+        CryptoListView(viewModel: CryptoListViewModel(repository: DIService.shared.cryptoRepository))
     }
 }

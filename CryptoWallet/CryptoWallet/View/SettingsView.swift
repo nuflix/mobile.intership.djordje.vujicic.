@@ -58,6 +58,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView(viewModel: SettingsViewModel(repository: UserRepository()))
+        SettingsView(viewModel: SettingsViewModel(repository: DIService.shared.userRepository))
     }
 }
