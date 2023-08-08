@@ -14,6 +14,8 @@ struct TradingView: View {
     @State var activeBuy = true
     @State private var isPresentingConfirm: Bool = false
     @Environment(\.dismiss) private var dismiss
+    @State var isPresentingError: Bool = false
+    @State var errorMessage = ""
 
     var body: some View {
         NavigationView {
@@ -28,6 +30,7 @@ struct TradingView: View {
                     .padding(.bottom)
 
                 textBoxArea()
+                   
                 Spacer()
                 ButtonComponentView(text: "Submit", tapGesture: showAlert)
                     .alert(isPresented: $isPresentingConfirm) {
@@ -39,6 +42,13 @@ struct TradingView: View {
                             secondaryButton: .cancel()
                         )
                     }
+                    .onReceive(viewModel.errorTrading) { error in
+                        errorMessage = error
+                        isPresentingError = true
+                    }
+                    .alert(errorMessage,
+                        isPresented: $isPresentingError) {
+                     }
             }
             .padding(.all, 20)
         }

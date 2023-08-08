@@ -13,6 +13,9 @@ class CreateAccountViewModel: ObservableObject {
     @Published var isVisible = false
     var isLogged: AnyPublisher<Void, Never> { isLoggedSubject.eraseToAnyPublisher() }
     private let isLoggedSubject = PassthroughSubject<Void, Never>()
+    
+    var errorReister: AnyPublisher<String, Never> { error.eraseToAnyPublisher() }
+    private let error = PassthroughSubject<String, Never>()
 
     private let repository: UserRepositoryInterface
     var tokens: Set<AnyCancellable> = []
@@ -32,16 +35,16 @@ class CreateAccountViewModel: ObservableObject {
     }
 
     func createAccount() {
-        repository.createAccount(request: UserPostModel(email: email, firstName: fName, lastName: lName, password: pass)).sink { error in
-            print("error: \(error)")
+        repository.createAccount(request: UserPostModel(email: email, firstName: fName, lastName: lName, password: pass)).sink { [weak self] completion in
+            if case let .failure(err) = completion { self?.error.send(err.message)  }
         } receiveValue: { [weak self] _ in
             self?.login()
         }.store(in: &tokens)
     }
 
     func login() {
-        repository.login(request: UserLoginModel(email: email, password: pass)).sink { error in
-            print("error: \(error)")
+        repository.login(request: UserLoginModel(email: email, password: pass)).sink { [weak self] completion in
+            if case let .failure(err) = completion { self?.error.send(err.message)  }
         } receiveValue: { [weak self] result in
             self?.isLoggedSubject.send()
             UserDefaultsController.saveJwt(jwt: result)

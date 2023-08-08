@@ -10,6 +10,8 @@ import SwiftUI
 struct LoginView: View {
     @StateObject var viewModel: LoginViewModel
     @EnvironmentObject var router: Router
+    @State private var isPresentingError: Bool = false
+    @State private var errorMessage = "Something went wrong, try again later"
 
     var body: some View {
         ZStack {
@@ -29,6 +31,13 @@ struct LoginView: View {
                         .onReceive(viewModel.isLogged) { _ in
                             router.navigate(to: .loggedIn)
                         }
+                        .onReceive(viewModel.loginError) { error in
+                            errorMessage = error
+                            isPresentingError = true
+                        }
+                        .alert(errorMessage,
+                            isPresented: $isPresentingError) {
+                          }
                     showLogin()
                 }
                 .frame(minHeight: 400)

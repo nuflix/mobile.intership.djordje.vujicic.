@@ -56,7 +56,12 @@ class DatabaseService {
     
     
     func updateData(ob: CryptocurrencyStorage) {
+        let config = Realm.Configuration(
+            schemaVersion: 2)
+        // Use this configuration when opening realms
+        Realm.Configuration.defaultConfiguration = config
         let realm = try! Realm()
+        
         if let obj = realm.objects(CryptocurrencyStorage.self).where({ $0.id == ob.id }).first {
             try! realm.write {
                 obj.valueOfOne = ob.valueOfOne

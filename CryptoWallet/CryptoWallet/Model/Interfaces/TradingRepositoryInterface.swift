@@ -12,7 +12,9 @@ import Combine
 protocol TradingRepositoryInterface {
     func fetchCryptoById(id: String) -> AnyPublisher<TradingModel, AFError>
     
-    func buyCrypto(id: String, val: Double) -> AnyPublisher<EmptyModel, AFError>
+    func buyCrypto(id: String, val: Double) -> AnyPublisher<EmptyModel, MyError>
     
-    func sellCrypto(id: String, val: Double) -> AnyPublisher<SuccessSell, AFError>
+    func sellCrypto(id: String, val: Double) -> AnyPublisher<SuccessSell, MyError>
+    
+    func update(ob: CryptocurrencyStorage)
 }

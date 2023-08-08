@@ -10,6 +10,8 @@ import SwiftUI
 struct CreateAccountView: View {
     @StateObject var viewModel: CreateAccountViewModel
     @EnvironmentObject var router: Router
+    @State private var isPresentingError: Bool = false
+    @State var errorMessage = ""
 
     var body: some View {
         ZStack {
@@ -28,8 +30,14 @@ struct CreateAccountView: View {
 
                     ButtonComponentView(text: "Create Account", tapGesture: viewModel.createAccount)
                         .onReceive(viewModel.isLogged) { _ in
-
                             router.navigate(to: .loggedIn)
+                        }
+                        .onReceive(viewModel.errorReister) { error in
+                            errorMessage = error
+                            isPresentingError = true
+                        }
+                        .alert(errorMessage, isPresented: $isPresentingError) {
+                            
                         }
                     showLogin()
                 }
@@ -59,6 +67,7 @@ struct CreateAccountView: View {
             .padding(.bottom, 50)
         }
     }
+    
 }
 
 struct CreateAccountView_Previews: PreviewProvider {

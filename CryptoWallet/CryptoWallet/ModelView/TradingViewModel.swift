@@ -17,6 +17,10 @@ class TradingViewModel: ObservableObject {
     private let repository: TradingRepositoryInterface
     var tokens: Set<AnyCancellable> = []
     
+    var errorTrading: AnyPublisher<String, Never> { error.eraseToAnyPublisher() }
+    private var error = PassthroughSubject<String, Never>()
+    
+    
     init(repository: TradingRepositoryInterface, id: String, curVal: Double = 0) {
         self.repository = repository
         self.id = id
@@ -24,10 +28,9 @@ class TradingViewModel: ObservableObject {
     }
     
     func buy(val: Double) {
-        repository.buyCrypto(id: id, val: val).sink(receiveCompletion: { error in
-            print("error: \(error)")
+        repository.buyCrypto(id: id, val: val).sink(receiveCompletion: { [weak self] completion in
+            if case let .failure(err) = completion { self?.error.send(err.message)  }
         }, receiveValue: { [weak self] response in
-                print("Success")
             self?.curVal = String(Double(self?.curVal ?? "0")! + val)
             self?.updateCrypto()
         }).store(in: &tokens)
@@ -35,8 +38,8 @@ class TradingViewModel: ObservableObject {
     }
     
     func sell(val: Double) {
-        repository.sellCrypto(id: id, val: val).sink(receiveCompletion: { error in
-            print("error: \(error)")
+        repository.sellCrypto(id: id, val: val).sink(receiveCompletion: { [weak self] completion in
+            if case let .failure(err) = completion { self?.error.send(err.message)  }
         }, receiveValue: { [weak self] response in
             if response.message == "success" {
                 self?.curVal = String(Double(self?.curVal ?? "0")! - val)
@@ -57,7 +60,7 @@ class TradingViewModel: ObservableObject {
     }
     
     func updateCrypto() {
-        DatabaseService.shared.updateData(ob: CryptocurrencyStorage(cryptocurrencyId: self.model.id, name: self.model.name, abbreviation: self.model.abbreviation, icon: self.model.icon, valueOfOne: self.model.valueOfOne, sum: Double(self.curVal)!, id: self.model.id))
+        repository.update(ob: CryptocurrencyStorage(cryptocurrencyId: self.id, name: self.model.name, abbreviation: self.model.abbreviation, icon: self.model.icon, valueOfOne: self.model.valueOfOne, sum: Double(self.curVal)!, id: self.id))
     }
     
 }

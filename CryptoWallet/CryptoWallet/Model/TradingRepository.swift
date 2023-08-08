@@ -10,16 +10,26 @@ import Combine
 import SwiftUI
 
 class TradingRepository: TradingRepositoryInterface {
-    func buyCrypto(id: String, val: Double) -> AnyPublisher<EmptyModel, AFError> {
-        return Networker.shared.fetchWithoutReq(url: "/users/buyCryptocurrency?cryptoId=\(id)&value=\(val)", method: .patch)
-            .eraseToAnyPublisher()
+    func update(ob: CryptocurrencyStorage) {
+        DatabaseService.shared.updateData(ob: ob)
     }
 
-    func sellCrypto(id: String, val: Double) -> AnyPublisher<SuccessSell, AFError> {
-        return Networker.shared.fetchWithoutReq(url: "/users/sellCryptocurrency?cryptoId=\(id)&value=\(val)", method: .patch).map { (response: EmptyModel) in
+    func buyCrypto(id: String, val: Double) -> AnyPublisher<EmptyModel, MyError> {
+        return Networker.shared.fetchWithoutReq(url: "/users/buyCryptocurrency?cryptoId=\(id)&value=\(val)", method: .patch)
+            .mapError({ error in
+                error.message(.buy)
+            })
+            .eraseToAnyPublisher()
+    }
+    
 
-            return SuccessSell(message: "success")
+    func sellCrypto(id: String, val: Double) -> AnyPublisher<SuccessSell, MyError> {
+        return Networker.shared.fetchWithoutReq(url: "/users/sellCryptocurrency?cryptoId=\(id)&value=\(val)", method: .patch).map { (_: EmptyModel) in
+            SuccessSell(message: "success")
         }
+        .mapError({ error in
+            error.message(.sell)
+        })
         .eraseToAnyPublisher()
     }
 

@@ -10,30 +10,34 @@ import SwiftUI
 struct SplashScreenView: View {
     @State var isActive: Bool = false
     @StateObject var viewModel: SplashScreenViewModel
+    @EnvironmentObject var router: Router
+
     var body: some View {
         ZStack {
             display()
         }
-        .onAppear() {
+        .onAppear {
             viewModel.checkIfLogged()
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                            withAnimation {
-                                self.isActive = true
-                            }
-                        }
+                if viewModel.isLogged {
+                    viewModel.isLogged = false
+                    router.navigate(to: .loggedIn)
+                }
+                withAnimation {
+                    self.isActive = true
+                }
+            }
         }
-      
     }
-    
+
     @ViewBuilder func display() -> some View {
-        if self.isActive {
+        if isActive {
             displayScreen()
         } else {
             displaySplash()
         }
     }
-    
-    
+
     @ViewBuilder func displaySplash() -> some View {
         ZStack {
             LinearGradient(gradient: .greenGrad, startPoint: .top, endPoint: .center).ignoresSafeArea()
@@ -49,15 +53,10 @@ struct SplashScreenView: View {
             }
         }
     }
-    
-    
+
     @ViewBuilder func displayScreen() -> some View {
-      
-           LoginView(viewModel: LoginViewModel(repository: DIService.shared.userRepository))
-            .fullScreenCover(isPresented: $viewModel.isLogged, content: LoggedInView.init)
-        
+        LoginView(viewModel: LoginViewModel(repository: DIService.shared.userRepository))
     }
-    
 }
 
 struct SplashScreenView_Previews: PreviewProvider {
