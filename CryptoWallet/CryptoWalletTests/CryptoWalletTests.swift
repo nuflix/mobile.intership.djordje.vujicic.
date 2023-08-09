@@ -8,6 +8,8 @@
 import XCTest
 import Combine
 import Alamofire
+import Realm
+import RealmSwift
 @testable import CryptoWallet
 
 class MockUserInfo: UserInfoRepositoryInterface {
@@ -30,24 +32,40 @@ class MockUserInfo: UserInfoRepositoryInterface {
 }
 
 class MockTrading : TradingRepositoryInterface {
+    func buyCrypto(id: String, val: Double) -> AnyPublisher<EmptyModel, MyError> {
+        return Just(EmptyModel())
+            .setFailureType(to: MyError.self)
+            .eraseToAnyPublisher()
+    }
+    
+    func sellCrypto(id: String, val: Double) -> AnyPublisher<SuccessSell, MyError> {
+        return Just(SuccessSell(message: "success"))
+            .setFailureType(to: MyError.self)
+            .eraseToAnyPublisher()
+    }
+    
     func update(ob: CryptocurrencyStorage) {
-
+        /*let config = Realm.Configuration(
+            schemaVersion: 2)
+        // Use this configuration when opening realms
+        Realm.Configuration.defaultConfiguration = config*/
+        let realm = try! Realm()
+      
+        print(realm.objects(CryptocurrencyStorage.self))
+        if let obj = realm.objects(CryptocurrencyStorage.self).where({ $0.id == ob.id }).first {
+            try! realm.write {
+                obj.valueOfOne = ob.valueOfOne
+                obj.sum = ob.sum
+            }
+        } else {
+            try! realm.write {
+                realm.add(ob)
+            }
+        }
     }
     
     func fetchCryptoById(id: String) -> AnyPublisher<TradingModel, Alamofire.AFError> {
         return Just(TradingModel(id: "bitcoin", name: "bitcoin", icon: "", valueOfOne: 1.5, abbreviation: "BTC"))
-            .setFailureType(to: AFError.self)
-            .eraseToAnyPublisher()
-    }
-    
-    func buyCrypto(id: String, val: Double) -> AnyPublisher<EmptyModel, Alamofire.AFError> {
-        return Just(EmptyModel())
-            .setFailureType(to: AFError.self)
-            .eraseToAnyPublisher()
-    }
-    
-    func sellCrypto(id: String, val: Double) -> AnyPublisher<SuccessSell, Alamofire.AFError> {
-        return Just(SuccessSell(message: "success"))
             .setFailureType(to: AFError.self)
             .eraseToAnyPublisher()
     }
@@ -60,6 +78,7 @@ final class CryptoWalletTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        Realm.Configuration.defaultConfiguration.inMemoryIdentifier = self.name
     }
 
     override func tearDownWithError() throws {
@@ -139,10 +158,11 @@ final class CryptoWalletTests: XCTestCase {
         let mock = MockTrading()
         let sut = TradingViewModel(repository: mock, id: "bitcoin")
         let oldVal = sut.curVal
-        let val = 2.00
+        let val = 20.00
         
         
-        sut.$curVal.dropFirst().sink { result in
+        sut.$curVal.dropFirst().sink { (result: String) in
+            print("\(oldVal) \(result)")
             XCTAssertLessThan(abs((Double(result) ?? 70) - ((Double(oldVal) ?? 44)-val)), 0.1)
             expectation.fulfill()
         }
@@ -154,6 +174,25 @@ final class CryptoWalletTests: XCTestCase {
         wait(for: [expectation], timeout: 10)
     }
     
+    func testTradingSellIntegration() {
+        let expectation = XCTestExpectation(description: "selling finished")
+        let sut = TradingViewModel(repository: DIService.shared.tradingRepository, id: "bitcoin")
+        let oldVal = sut.curVal
+        let val = 1.00
+        
+        
+        sut.$curVal.dropFirst().sink { (result: String) in
+            print("\(oldVal) \(result)")
+            XCTAssertLessThan(abs((Double(result) ?? 70) - ((Double(oldVal) ?? 44)-val)), 0.1)
+            expectation.fulfill()
+        }
+        .store(in: &cancellables)
+        
+        sut.sell(val: val)
+        
+        
+        wait(for: [expectation], timeout: 10)
+    }
     
 
 }

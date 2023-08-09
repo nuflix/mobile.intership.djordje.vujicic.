@@ -13,45 +13,7 @@
 		C31CD11B2A66B54D00975D39 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
 		C31CD11D2A66B8A500975D39 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
 		C31F652D2A7CE30700E633E9 /* TradingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACA2A70FC8B004F360D /* TradingViewModel.swift */; };
-		C31F652E2A7CE38700E633E9 /* TradingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACA2A70FC8B004F360D /* TradingViewModel.swift */; };
-		C31F652F2A7CE55000E633E9 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD42A715148004F360D /* LoggedInView.swift */; };
 		C31F65302A7CE55100E633E9 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD42A715148004F360D /* LoggedInView.swift */; };
-		C31F65312A7CE58A00E633E9 /* TradingRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C4E2A724A6500BEBA38 /* TradingRepositoryInterface.swift */; };
-		C31F65322A7CE59900E633E9 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3345BB92A7BCC3000C2A8B0 /* DIService.swift */; };
-		C31F65332A7CE59F00E633E9 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB52A692BFC00582EAE /* UserRepository.swift */; };
-		C31F65342A7CE5A700E633E9 /* TradingModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */; };
-		C31F65352A7CE5B000E633E9 /* JwtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EBD2A69579200582EAE /* JwtModel.swift */; };
-		C31F65362A7CE5B900E633E9 /* UserPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EBB2A69575900582EAE /* UserPostModel.swift */; };
-		C31F65372A7CE5BB00E633E9 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB92A693C6F00582EAE /* PostModel.swift */; };
-		C31F65382A7CE5BE00E633E9 /* CryptoListItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7C2A6AC60000B0CE4D /* CryptoListItemResponse.swift */; };
-		C31F65392A7CE5C200E633E9 /* CryptoWalletResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */; };
-		C31F653A2A7CE5C400E633E9 /* CurrentUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B610A2A73B83900FFC1B8 /* CurrentUserResponse.swift */; };
-		C31F653B2A7CE5C700E633E9 /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EC12A69681500582EAE /* UserLoginModel.swift */; };
-		C31F653C2A7CE5CB00E633E9 /* CryptoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A4376A2A6E907600482FAE /* CryptoRepositoryInterface.swift */; };
-		C31F653D2A7CE5CD00E633E9 /* UserRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */; };
-		C31F653E2A7CE5D200E633E9 /* DashboardRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C502A724A8100BEBA38 /* DashboardRepositoryInterface.swift */; };
-		C31F653F2A7CE5D500E633E9 /* StrIdInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B61102A74008F00FFC1B8 /* StrIdInterface.swift */; };
-		C31F65402A7CE5D700E633E9 /* UserInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB1612A78FF670063A25D /* UserInfoRepositoryInterface.swift */; };
-		C31F65412A7CE5DC00E633E9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD62A715352004F360D /* DashboardView.swift */; };
-		C31F65422A7CE5DE00E633E9 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD82A716255004F360D /* UserView.swift */; };
-		C31F65432A7CE5E300E633E9 /* TradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437642A6E7D8000482FAE /* TradingView.swift */; };
-		C31F65442A7CE5F000E633E9 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB1652A7900C70063A25D /* UserInfoViewModel.swift */; };
-		C31F65452A7CE5F300E633E9 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370F6A32A7A6F2100389169 /* SettingsViewModel.swift */; };
-		C31F65462A7CE5F500E633E9 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B610E2A73BA3F00FFC1B8 /* SplashScreenViewModel.swift */; };
-		C31F65472A7CE5F700E633E9 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE42A716F5C004F360D /* DashboardViewModel.swift */; };
-		C31F65482A7CE5FC00E633E9 /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437662A6E8DD200482FAE /* CryptoListViewModel.swift */; };
-		C31F65492A7CE5FE00E633E9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EC32A697C6900582EAE /* LoginViewModel.swift */; };
-		C31F654A2A7CE60100E633E9 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E861492A68191F0076591B /* CreateAccountViewModel.swift */; };
-		C31F654B2A7CE60300E633E9 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */; };
-		C31F654C2A7CE60700E633E9 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B610C2A73B8DF00FFC1B8 /* CurrentUser.swift */; };
-		C31F654D2A7CE60900E633E9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF762A6A8B6800B0CE4D /* UserModel.swift */; };
-		C31F654E2A7CE60B00E633E9 /* CryptoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460AFC2A6FF947000CAB0A /* CryptoListItem.swift */; };
-		C31F654F2A7CE60D00E633E9 /* TradingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACC2A70FCE8004F360D /* TradingModel.swift */; };
-		C31F65502A7CE61000E633E9 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADE2A716A6A004F360D /* WalletModel.swift */; };
-		C31F65512A7CE61300E633E9 /* CryptoWalletItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE02A716B13004F360D /* CryptoWalletItem.swift */; };
-		C31F65522A7CE61500E633E9 /* SuccessSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C522A726EB800BEBA38 /* SuccessSell.swift */; };
-		C31F65532A7CE61700E633E9 /* CryptocurrencyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C5F2A729BC600BEBA38 /* CryptocurrencyStorage.swift */; };
-		C31F65542A7CE62300E633E9 /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EBF2A695C8000582EAE /* EmptyModel.swift */; };
 		C31F65552A7CE63600E633E9 /* TradingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACC2A70FCE8004F360D /* TradingModel.swift */; };
 		C31F65562A7CE63E00E633E9 /* UserRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF782A6AA56800B0CE4D /* UserRepositoryInterface.swift */; };
 		C31F65572A7CE63F00E633E9 /* CryptoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A4376A2A6E907600482FAE /* CryptoRepositoryInterface.swift */; };
@@ -60,8 +22,6 @@
 		C31F655A2A7CE64600E633E9 /* StrIdInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B61102A74008F00FFC1B8 /* StrIdInterface.swift */; };
 		C31F655B2A7CE64900E633E9 /* UserInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB1612A78FF670063A25D /* UserInfoRepositoryInterface.swift */; };
 		C31F655E2A7CE6D700E633E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C31F655D2A7CE6D700E633E9 /* Alamofire */; };
-		C31F65602A7CE6D700E633E9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C31F655F2A7CE6D700E633E9 /* Realm */; };
-		C31F65622A7CE6D700E633E9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C31F65612A7CE6D700E633E9 /* RealmSwift */; };
 		C31F656A2A7CE78300E633E9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C31F65692A7CE78300E633E9 /* Alamofire */; };
 		C31F656C2A7CE78300E633E9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C31F656B2A7CE78300E633E9 /* Realm */; };
 		C31F656E2A7CE78300E633E9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C31F656D2A7CE78300E633E9 /* RealmSwift */; };
@@ -83,18 +43,12 @@
 		C31F65842A7CE80F00E633E9 /* TradingModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ACE2A70FE0C004F360D /* TradingModelResponse.swift */; };
 		C31F65852A7CE81100E633E9 /* CryptoWalletResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */; };
 		C31F65862A7CE82200E633E9 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3345BB92A7BCC3000C2A8B0 /* DIService.swift */; };
-		C31F65872A7CE85400E633E9 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437682A6E902400482FAE /* CryptoRepository.swift */; };
 		C31F65882A7CE85500E633E9 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437682A6E902400482FAE /* CryptoRepository.swift */; };
 		C31F65892A7CE85700E633E9 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EB52A692BFC00582EAE /* UserRepository.swift */; };
-		C31F658A2A7CE85900E633E9 /* TradingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD02A70FE38004F360D /* TradingRepository.swift */; };
 		C31F658B2A7CE85900E633E9 /* TradingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD02A70FE38004F360D /* TradingRepository.swift */; };
-		C31F658C2A7CE85C00E633E9 /* DashboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADC2A7168E4004F360D /* DashboardRepository.swift */; };
 		C31F658D2A7CE85C00E633E9 /* DashboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADC2A7168E4004F360D /* DashboardRepository.swift */; };
-		C31F658E2A7CE85E00E633E9 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C582A72964200BEBA38 /* DatabaseService.swift */; };
 		C31F658F2A7CE85F00E633E9 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33A0C582A72964200BEBA38 /* DatabaseService.swift */; };
-		C31F65902A7CE86100E633E9 /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB1632A78FFE40063A25D /* UserInfoRepository.swift */; };
 		C31F65912A7CE86100E633E9 /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB1632A78FFE40063A25D /* UserInfoRepository.swift */; };
-		C31F65922A7CE86500E633E9 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EAD2A69152300582EAE /* Networker.swift */; };
 		C31F65932A7CE86600E633E9 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C8EAD2A69152300582EAE /* Networker.swift */; };
 		C31F65942A7CE88700E633E9 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE42A716F5C004F360D /* DashboardViewModel.swift */; };
 		C31F65952A7CE88900E633E9 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B610E2A73BA3F00FFC1B8 /* SplashScreenViewModel.swift */; };
@@ -106,41 +60,23 @@
 		C31F659B2A7CE89900E633E9 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF742A6A8AFE00B0CE4D /* UserDefaultsController.swift */; };
 		C31F659C2A7CE8A100E633E9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD62A715352004F360D /* DashboardView.swift */; };
 		C31F659D2A7CE8A300E633E9 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD82A716255004F360D /* UserView.swift */; };
-		C31F659E2A7CE8A600E633E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADA2A716266004F360D /* SettingsView.swift */; };
 		C31F659F2A7CE8A600E633E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671ADA2A716266004F360D /* SettingsView.swift */; };
-		C31F65A02A7CE8A900E633E9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B61082A73B00600FFC1B8 /* SplashScreenView.swift */; };
 		C31F65A12A7CE8A900E633E9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B61082A73B00600FFC1B8 /* SplashScreenView.swift */; };
-		C31F65A22A7CE8AE00E633E9 /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */; };
 		C31F65A32A7CE8AE00E633E9 /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EF7A2A6ABE2200B0CE4D /* CryptoListView.swift */; };
-		C31F65A42A7CE8B200E633E9 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
 		C31F65A52A7CE8B300E633E9 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
-		C31F65A62A7CE8B500E633E9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */; };
 		C31F65A72A7CE8B500E633E9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */; };
-		C31F65A82A7CE8CB00E633E9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370F6A72A7A856800389169 /* Router.swift */; };
 		C31F65A92A7CE8CC00E633E9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370F6A72A7A856800389169 /* Router.swift */; };
-		C31F65AA2A7CE8E000E633E9 /* ButtonComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1142A6692C100975D39 /* ButtonComponentView.swift */; };
 		C31F65AB2A7CE8E100E633E9 /* ButtonComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1142A6692C100975D39 /* ButtonComponentView.swift */; };
-		C31F65AC2A7CE8E300E633E9 /* TextFieldComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1162A6698C000975D39 /* TextFieldComponentView.swift */; };
 		C31F65AD2A7CE8E300E633E9 /* TextFieldComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1162A6698C000975D39 /* TextFieldComponentView.swift */; };
-		C31F65AE2A7CE8E600E633E9 /* PassFieldComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1182A669A0800975D39 /* PassFieldComponentView.swift */; };
 		C31F65AF2A7CE8E600E633E9 /* PassFieldComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD1182A669A0800975D39 /* PassFieldComponentView.swift */; };
-		C31F65B02A7CE8E800E633E9 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
 		C31F65B12A7CE8E800E633E9 /* LinkTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11A2A66B54D00975D39 /* LinkTextComponentView.swift */; };
-		C31F65B22A7CE8EA00E633E9 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
 		C31F65B32A7CE8EA00E633E9 /* TitleTextComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CD11C2A66B8A500975D39 /* TitleTextComponentView.swift */; };
-		C31F65B42A7CE8ED00E633E9 /* BuySellBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD22A711EC7004F360D /* BuySellBtnView.swift */; };
 		C31F65B52A7CE8EE00E633E9 /* BuySellBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AD22A711EC7004F360D /* BuySellBtnView.swift */; };
-		C31F65B62A7CE8EF00E633E9 /* UserInfoTextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB15F2A78E6BF0063A25D /* UserInfoTextBoxView.swift */; };
 		C31F65B72A7CE8F000E633E9 /* UserInfoTextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB15F2A78E6BF0063A25D /* UserInfoTextBoxView.swift */; };
-		C31F65B82A7CE8F200E633E9 /* ButtonLogoutComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB1672A7930760063A25D /* ButtonLogoutComponentView.swift */; };
 		C31F65B92A7CE8F200E633E9 /* ButtonLogoutComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BB1672A7930760063A25D /* ButtonLogoutComponentView.swift */; };
-		C31F65BA2A7CE8F600E633E9 /* Base64Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460AF72A6FC87D000CAB0A /* Base64Image.swift */; };
 		C31F65BB2A7CE8F700E633E9 /* Base64Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460AF72A6FC87D000CAB0A /* Base64Image.swift */; };
-		C31F65BC2A7CE8F900E633E9 /* ColorExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236492A67ECAA009C9951 /* ColorExtView.swift */; };
 		C31F65BD2A7CE8F900E633E9 /* ColorExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236492A67ECAA009C9951 /* ColorExtView.swift */; };
-		C31F65BE2A7CE8FB00E633E9 /* RoundedCornersExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */; };
 		C31F65BF2A7CE8FC00E633E9 /* RoundedCornersExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236472A67DA65009C9951 /* RoundedCornersExtView.swift */; };
-		C31F65C02A7CE8FD00E633E9 /* GradientExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236452A67D359009C9951 /* GradientExtView.swift */; };
 		C31F65C12A7CE8FE00E633E9 /* GradientExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35236452A67D359009C9951 /* GradientExtView.swift */; };
 		C3345BBA2A7BCC3000C2A8B0 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3345BB92A7BCC3000C2A8B0 /* DIService.swift */; };
 		C336AAB62A66CF2A008B6473 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C336AAB52A66CF2A008B6473 /* CreateAccountView.swift */; };
@@ -189,6 +125,9 @@
 		C3671AE12A716B13004F360D /* CryptoWalletItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE02A716B13004F360D /* CryptoWalletItem.swift */; };
 		C3671AE32A716B62004F360D /* CryptoWalletResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE22A716B62004F360D /* CryptoWalletResponse.swift */; };
 		C3671AE52A716F5C004F360D /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3671AE42A716F5C004F360D /* DashboardViewModel.swift */; };
+		C36D79452A83BFB500A6C9E4 /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F7BAD2A822AE200F4BC91 /* MyError.swift */; };
+		C36D794A2A83CD0D00A6C9E4 /* CryptoWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA5052A657BCF00C1D3B7 /* CryptoWalletTests.swift */; };
+		C36D794C2A83CD9B00A6C9E4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C36D794B2A83CD9B00A6C9E4 /* Realm */; };
 		C370F6A42A7A6F2100389169 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370F6A32A7A6F2100389169 /* SettingsViewModel.swift */; };
 		C370F6A82A7A856800389169 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C370F6A72A7A856800389169 /* Router.swift */; };
 		C3A437652A6E7D8000482FAE /* TradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A437642A6E7D8000482FAE /* TradingView.swift */; };
@@ -204,7 +143,6 @@
 		C3CAA4F72A657BCE00C1D3B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA4F62A657BCE00C1D3B7 /* LoginView.swift */; };
 		C3CAA4F92A657BCF00C1D3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CAA4F82A657BCF00C1D3B7 /* Assets.xcassets */; };
 		C3CAA4FC2A657BCF00C1D3B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CAA4FB2A657BCF00C1D3B7 /* Preview Assets.xcassets */; };
-		C3CAA5062A657BCF00C1D3B7 /* CryptoWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA5052A657BCF00C1D3B7 /* CryptoWalletTests.swift */; };
 		C3CAA5102A657BCF00C1D3B7 /* CryptoWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA50F2A657BCF00C1D3B7 /* CryptoWalletUITests.swift */; };
 		C3CAA5122A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAA5112A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift */; };
 		C3DFF49A2A77A1E0006CB15B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF4992A77A1DF006CB15B /* Roboto-Thin.ttf */; };
@@ -214,7 +152,6 @@
 		C3DFF49F2A77A22E006CB15B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF49D2A77A22E006CB15B /* Roboto-Light.ttf */; };
 		C3DFF4A02A77A22E006CB15B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3DFF49D2A77A22E006CB15B /* Roboto-Light.ttf */; };
 		C3DFF4A32A77F428006CB15B /* TabViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFF4A22A77F428006CB15B /* TabViewImage.swift */; };
-		C3DFF4A42A77F428006CB15B /* TabViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFF4A22A77F428006CB15B /* TabViewImage.swift */; };
 		C3DFF4A52A77F428006CB15B /* TabViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFF4A22A77F428006CB15B /* TabViewImage.swift */; };
 		C3E861482A6818E90076591B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3E861472A6818E90076591B /* Alamofire */; };
 		C3E8614A2A68191F0076591B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E861492A68191F0076591B /* CreateAccountViewModel.swift */; };
@@ -331,8 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31F65622A7CE6D700E633E9 /* RealmSwift in Frameworks */,
-				C31F65602A7CE6D700E633E9 /* Realm in Frameworks */,
+				C36D794C2A83CD9B00A6C9E4 /* Realm in Frameworks */,
 				C31F655E2A7CE6D700E633E9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,8 +522,7 @@
 			name = CryptoWalletTests;
 			packageProductDependencies = (
 				C31F655D2A7CE6D700E633E9 /* Alamofire */,
-				C31F655F2A7CE6D700E633E9 /* Realm */,
-				C31F65612A7CE6D700E633E9 /* RealmSwift */,
+				C36D794B2A83CD9B00A6C9E4 /* Realm */,
 			);
 			productName = CryptoWalletTests;
 			productReference = C3CAA5012A657BCF00C1D3B7 /* CryptoWalletTests.xctest */;
@@ -775,70 +710,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31F65362A7CE5B900E633E9 /* UserPostModel.swift in Sources */,
-				C3DFF4A42A77F428006CB15B /* TabViewImage.swift in Sources */,
-				C31F653E2A7CE5D200E633E9 /* DashboardRepositoryInterface.swift in Sources */,
-				C31F65472A7CE5F700E633E9 /* DashboardViewModel.swift in Sources */,
-				C31F65AC2A7CE8E300E633E9 /* TextFieldComponentView.swift in Sources */,
-				C31F652F2A7CE55000E633E9 /* LoggedInView.swift in Sources */,
-				C31F65512A7CE61300E633E9 /* CryptoWalletItem.swift in Sources */,
-				C31F65402A7CE5D700E633E9 /* UserInfoRepositoryInterface.swift in Sources */,
-				C31F65432A7CE5E300E633E9 /* TradingView.swift in Sources */,
-				C31F65A22A7CE8AE00E633E9 /* CryptoListView.swift in Sources */,
-				C31F653F2A7CE5D500E633E9 /* StrIdInterface.swift in Sources */,
-				C31F65322A7CE59900E633E9 /* DIService.swift in Sources */,
-				C31F658E2A7CE85E00E633E9 /* DatabaseService.swift in Sources */,
-				C31F65A82A7CE8CB00E633E9 /* Router.swift in Sources */,
-				C31F65332A7CE59F00E633E9 /* UserRepository.swift in Sources */,
-				C31F65AA2A7CE8E000E633E9 /* ButtonComponentView.swift in Sources */,
-				C31F65542A7CE62300E633E9 /* EmptyModel.swift in Sources */,
-				C31F65A42A7CE8B200E633E9 /* CreateAccountView.swift in Sources */,
-				C31F654D2A7CE60900E633E9 /* UserModel.swift in Sources */,
-				C31F653D2A7CE5CD00E633E9 /* UserRepositoryInterface.swift in Sources */,
-				C31F65452A7CE5F300E633E9 /* SettingsViewModel.swift in Sources */,
-				C31F654E2A7CE60B00E633E9 /* CryptoListItem.swift in Sources */,
-				C3CAA5062A657BCF00C1D3B7 /* CryptoWalletTests.swift in Sources */,
-				C31F65412A7CE5DC00E633E9 /* DashboardView.swift in Sources */,
-				C31F65BC2A7CE8F900E633E9 /* ColorExtView.swift in Sources */,
-				C31F654C2A7CE60700E633E9 /* CurrentUser.swift in Sources */,
-				C31F65422A7CE5DE00E633E9 /* UserView.swift in Sources */,
-				C31F65532A7CE61700E633E9 /* CryptocurrencyStorage.swift in Sources */,
-				C31F658A2A7CE85900E633E9 /* TradingRepository.swift in Sources */,
-				C31F65A02A7CE8A900E633E9 /* SplashScreenView.swift in Sources */,
-				C31F65312A7CE58A00E633E9 /* TradingRepositoryInterface.swift in Sources */,
-				C31F65A62A7CE8B500E633E9 /* LoginView.swift in Sources */,
-				C31F654A2A7CE60100E633E9 /* CreateAccountViewModel.swift in Sources */,
-				C31F653A2A7CE5C400E633E9 /* CurrentUserResponse.swift in Sources */,
-				C31F65482A7CE5FC00E633E9 /* CryptoListViewModel.swift in Sources */,
-				C31F659E2A7CE8A600E633E9 /* SettingsView.swift in Sources */,
-				C31F65AE2A7CE8E600E633E9 /* PassFieldComponentView.swift in Sources */,
-				C31F65872A7CE85400E633E9 /* CryptoRepository.swift in Sources */,
-				C31F65342A7CE5A700E633E9 /* TradingModelResponse.swift in Sources */,
-				C31F65462A7CE5F500E633E9 /* SplashScreenViewModel.swift in Sources */,
-				C31F65B02A7CE8E800E633E9 /* LinkTextComponentView.swift in Sources */,
-				C31F652E2A7CE38700E633E9 /* TradingViewModel.swift in Sources */,
-				C31F65C02A7CE8FD00E633E9 /* GradientExtView.swift in Sources */,
-				C31F65922A7CE86500E633E9 /* Networker.swift in Sources */,
-				C31F65492A7CE5FE00E633E9 /* LoginViewModel.swift in Sources */,
-				C31F65442A7CE5F000E633E9 /* UserInfoViewModel.swift in Sources */,
-				C31F653B2A7CE5C700E633E9 /* UserLoginModel.swift in Sources */,
-				C31F65352A7CE5B000E633E9 /* JwtModel.swift in Sources */,
-				C31F65B82A7CE8F200E633E9 /* ButtonLogoutComponentView.swift in Sources */,
-				C31F65BA2A7CE8F600E633E9 /* Base64Image.swift in Sources */,
-				C31F653C2A7CE5CB00E633E9 /* CryptoRepositoryInterface.swift in Sources */,
-				C31F654F2A7CE60D00E633E9 /* TradingModel.swift in Sources */,
-				C31F65902A7CE86100E633E9 /* UserInfoRepository.swift in Sources */,
-				C31F65382A7CE5BE00E633E9 /* CryptoListItemResponse.swift in Sources */,
-				C31F658C2A7CE85C00E633E9 /* DashboardRepository.swift in Sources */,
-				C31F65372A7CE5BB00E633E9 /* PostModel.swift in Sources */,
-				C31F65392A7CE5C200E633E9 /* CryptoWalletResponse.swift in Sources */,
-				C31F65522A7CE61500E633E9 /* SuccessSell.swift in Sources */,
-				C31F65B22A7CE8EA00E633E9 /* TitleTextComponentView.swift in Sources */,
-				C31F65502A7CE61000E633E9 /* WalletModel.swift in Sources */,
-				C31F65B42A7CE8ED00E633E9 /* BuySellBtnView.swift in Sources */,
-				C31F65BE2A7CE8FB00E633E9 /* RoundedCornersExtView.swift in Sources */,
-				C31F654B2A7CE60300E633E9 /* UserDefaultsController.swift in Sources */,
-				C31F65B62A7CE8EF00E633E9 /* UserInfoTextBoxView.swift in Sources */,
+				C36D794A2A83CD0D00A6C9E4 /* CryptoWalletTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +724,7 @@
 				C31F65932A7CE86600E633E9 /* Networker.swift in Sources */,
 				C31F657A2A7CE7D900E633E9 /* CryptocurrencyStorage.swift in Sources */,
 				C31F65552A7CE63600E633E9 /* TradingModel.swift in Sources */,
+				C36D79452A83BFB500A6C9E4 /* MyError.swift in Sources */,
 				C31F65592A7CE64400E633E9 /* DashboardRepositoryInterface.swift in Sources */,
 				C31F659D2A7CE8A300E633E9 /* UserView.swift in Sources */,
 				C3CAA5122A657BCF00C1D3B7 /* CryptoWalletUITestsLaunchTests.swift in Sources */,
@@ -1125,6 +998,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -1144,6 +1018,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -1256,16 +1131,6 @@
 			package = C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		C31F655F2A7CE6D700E633E9 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		C31F65612A7CE6D700E633E9 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		C31F65632A7CE75C00E633E9 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C3E861462A6818E90076591B /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -1310,6 +1175,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		C36D794B2A83CD9B00A6C9E4 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C33A0C5A2A72978900BEBA38 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
 		};
 		C3E861472A6818E90076591B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
