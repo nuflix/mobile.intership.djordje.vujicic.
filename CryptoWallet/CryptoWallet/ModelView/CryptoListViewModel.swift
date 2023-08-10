@@ -11,6 +11,7 @@ import SwiftUI
 
 class CryptoListViewModel: ObservableObject {
     @Published var items: [CryptoListItem] = []
+    @Published var fetched: Bool = false
 
     private let repository: CryptoRepositoryInterface
     var tokens: Set<AnyCancellable> = []
@@ -24,6 +25,7 @@ class CryptoListViewModel: ObservableObject {
             print("error: \(error)")
         } receiveValue: { [weak self] result in
             self?.items = result
+            self?.fetched = true
 
         }.store(in: &tokens)
     }

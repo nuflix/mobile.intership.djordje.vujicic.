@@ -35,33 +35,48 @@ struct CryptoListView: View {
         }
     }
 
-    func listView() -> some View {
-        return List {
-            ForEach(viewModel.items) { item in
-                NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: DIService.shared.tradingRepository, id: item.id, curVal: viewModel.findCrypto(id: item.id)?.sum ?? 0))) {
-                    HStack {
-                        Image(base64String: item.icon)?
-                            .resizable()
-                            .frame(width: 40, height: 40)
-
-                        VStack(alignment: .leading) {
-                            Text("\(item.name) (\(item.abbreviation.uppercased()))")
-                                .fontWeight(.bold)
-                            Text(String(format: "$%.2f", item.valueOfOne))
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
+    @ViewBuilder func listView() -> some View {
+        if(viewModel.fetched) {
+            List {
+                ForEach(viewModel.items) { item in
+                    NavigationLink(destination: TradingView(viewModel: TradingViewModel(repository: DIService.shared.tradingRepository, id: item.id, curVal: viewModel.findCrypto(id: item.id)?.sum ?? 0))) {
+                        HStack {
+                            Image(base64String: item.icon)?
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            
+                            VStack(alignment: .leading) {
+                                Text("\(item.name) (\(item.abbreviation.uppercased()))")
+                                    .fontWeight(.bold)
+                                Text(String(format: "$%.2f", item.valueOfOne))
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                            .padding(.leading)
                         }
-                        .padding(.leading)
+                        .padding(.vertical, 15)
                     }
-                    .padding(.vertical, 15)
-                }
-                .alignmentGuide(.listRowSeparatorLeading) { dimension in
-                    dimension[.leading]
+                    .alignmentGuide(.listRowSeparatorLeading) { dimension in
+                        dimension[.leading]
+                    }
                 }
             }
+            .listStyle(.plain)
+            .padding(.trailing, 20)
+        } else {
+            List {
+                ShimmerEffectBox()
+                    .frame(height: 60)
+                ShimmerEffectBox()
+                    .frame(height: 60)
+                ShimmerEffectBox()
+                    .frame(height: 60)
+                ShimmerEffectBox()
+                    .frame(height: 60)
+            }
+            .listStyle(.plain)
+            .padding(.trailing, 20)
         }
-        .listStyle(.plain)
-        .padding(.trailing, 20)
     }
 }
 
